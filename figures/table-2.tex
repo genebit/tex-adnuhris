@@ -1,23 +1,77 @@
 \begin{table}[H]
-\begin{tabular}{@{}cll@{}}
-\toprule
-\multicolumn{1}{l}{} & \textbf{Modules}                         & \textbf{Brief Description}                                                            \\ \midrule
-\textbf{HRIS MODULE} & Contacts                                 & Module use to save contact numbers within and outside the university                  \\
-                     & Data Extraction                          & Module that handles query to retrieve processed information                           \\
-                     & Personal Info                            & Module to store personal information of employees                                     \\
-                     & General Employee Status Tracker          & Module use to track down status movements of the employees                            \\
-                     & Employee Profile                         & Contains other information of the employees                                           \\
-                     & Assignments                              & This module contains the active designation of the employee                           \\
-                     & Assignment Archive                       & Contains the archived/history designation of the employees                            \\
-                     & Faculty Rank                             & Modules that handles academic rank of the faculty                                     \\
-                     & Academic Profile                         & Academic records of all employees                                                     \\
-                     & Academic Awards                          & Module that handles the awards receive by the employee on a particular academic level \\
-                     & Professional License Record              & Professional license record of employees                                              \\
-                     & Training Attended Module                 & Contains record of training attended of employees                                     \\
-                     & Performance Evaluation                   & Contains the average performance evaluation of each employee.                         \\
-                     & COE                                      & Inputs the necessary data to produce the certificate of employment                    \\
-                     & COE Reports                              & View of the newly requested COE                                                       \\
-                     & Contracts/Appointment Generation Reports & Generates contracts/appointment of employees.                                         \\
-                     & Health Record                            & Contains health info of the employee                                                  \\ \bottomrule
-\end{tabular}
+    \begin{tabular}{@{}p{2cm}p{3.5cm}p{9cm}@{}}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{Modules}                         & \textbf{Brief Description}                                                            \\ \midrule
+    \textbf{HRIS MODULE} & Contacts                                 & Module use to save contact numbers within and outside the university                  \\
+                         & Data Extraction                          & Module that handles query to retrieve processed information                           \\
+                         & Personal Info                            & Module to store personal information of employees                                     \\
+                         & General Employee Status Tracker          & Module use to track down status movements of the employees                            \\
+                         & Employee Profile                         & Contains other information of the employees                                           \\
+                         & Assignments                              & This module contains the active designation of the employee                           \\
+                         & Assignment Archive                       & Contains the archived/history designation of the employees                            \\
+                         & Faculty Rank                             & Modules that handles academic rank of the faculty                                     \\
+                         & Academic Profile                         & Academic records of all employees                                                     \\
+                         & Academic Awards                          & Module that handles the awards receive by the employee on a particular academic level \\
+                         & Professional License Record              & Professional license record of employees                                              \\
+                         & Training Attended Module                 & Contains record of training attended of employees                                     \\
+                         & Performance Evaluation                   & Contains the average performance evaluation of each employee.                         \\
+                         & COE                                      & Inputs the necessary data to produce the certificate of employment                    \\
+                         & COE Reports                              & View of the newly requested COE                                                       \\
+                         & Contracts/Appointment Generation Reports & Generates contracts/appointment of employees.                                         \\
+                         & Health Record                            & Contains health info of the employee                                                  \\ \bottomrule
+    \end{tabular}
+    \caption{HRIS Basic Modules List}
+    \label{tab:my_label}
 \end{table}
+    
+\begin{table}[H]
+\begin{tabular}{@{}p{2cm}p{3.5cm}p{9cm}@{}}
+\toprule
+\multicolumn{1}{l}{} & \textbf{Modules}                       & \textbf{Brief Description}                                                                    \\ \midrule
+\textbf{TIMESYS}     & DTR Scanner                            & Captures the login and logout of all staff employees.                                         \\
+                        & Attendance Module (Non-Teaching Staff) & Attendance record of staff for the current and last month of the year.                        \\
+                        & Attendance Archived                    & Full Attendance record of staff.                                                              \\
+                        & Process Staff Attendance Report        & Process the raw data of staff attendance record.                                              \\
+                        & Holiday Module                         & Stores the holidays of the year which is necessary for the monthly attendance report of staff \\
+                        & Work Schedule Scheme                   & List of work schedule followed by the employees                                               \\
+                        & Assign Work Schedule Scheme            & Assign the work schedule scheme to the employees. Scheme that is being followed by each staff \\
+                        & Work schedule scheme checker           & Check if there are existing work schedule that matches the desired work schedule.             \\
+                        & Tardiness Module                       & This module handles the tardiness incurred by the employees in a particular month.            \\
+                        & Remarks Module                         & Add remarks                                                                                   \\
+                        & Awol Module                            & Process and add awol record in the database                                                   \\
+                        & Overtime Module                        & Process and compute attendance record in the database                                         \\
+                        & Staff Monthly/Annual Attendance Report &                                                                                               \\ \bottomrule
+\end{tabular}
+\caption{HRIS TIMESYS Modules List}
+\label{tab:my_label}
+\end{table}
+
+\begin{table}[H]
+\begin{tabular}{@{}p{2cm}p{3.5cm}p{9cm}@{}}
+\toprule
+\multicolumn{1}{l}{} & \textbf{Modules}                                    & \textbf{Brief Description}                                                                       \\ \midrule
+\textbf{LEAVESYS}    & Leave Application (Faculty and Staff)               & Stores all the approved leave application of all employees                                       \\
+                        & Leave Reason                                        & List of all reasons used by the employees                                                        \\
+                        & Leave Credits (Faculty and Staff)                   & Contains the incurred and remaining leave credits of all employees                               \\
+                        & Leave Credits Scheme (Faculty and Staff)            & Identify the details of the leave credits scheme.                                                \\
+                        & Assign Leave Credits Scheme                         & Identify the leave credits schemed assigned to each employee                                     \\
+                        & Process Leave Application with Leave Credits Report & Leave application and leave credits report that is useful for decision making for each employee. \\ \bottomrule
+\end{tabular}
+\caption{HRIS LEAVESYS Modules List}
+\label{tab:my_label}
+\end{table}
+
+\begin{table}[H]
+\begin{tabular}{@{}p{2cm}p{3.5cm}p{9cm}@{}}
+\toprule
+\multicolumn{1}{l}{} & \textbf{Modules}                  & \textbf{Brief Description}                                                                                                               \\ \midrule
+\textbf{FACSYS}      & Faculty Attendance                & Contains the attendance of all faculty filtered by semester and school year based on the schedule encoded in the Faculty Schedule Module \\
+                        & Faculty Schedule                  & Contains the schedule of all faculty filtered by semester and school year based on the faculty loading report.                           \\
+                        & Pending Faculty Schedule          & Contains the incurred and remaining leave credits of all employees                                                                       \\
+                        & Required Class Hours              & Identify the required class hours of each faculty for the particular semester and school year.                                           \\
+                        & Process Faculty Attendance Report & Process the attendance record of faculty on the desired date/month of the user.                                                          \\ \bottomrule
+\end{tabular}
+\caption{HRIS FACSYS Modules List}
+\label{tab:my_label}
+\end{table}
+    
