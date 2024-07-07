@@ -7,7 +7,6 @@ One of the critical components in understanding and developing any system is est
 \section{Project Code Infrastructure}
 
     The web application utilizes Laravel by Taylor Otwell as the main full-stack web application framework. Laravel, by default, follows a Model-View-Controller (MVC) architectural pattern \cite{medium12023}. A common project structure when creating complex and dynamic web systems. 
-    \\
     
     \begin{figure}[H]
         \centering
@@ -17,7 +16,6 @@ One of the critical components in understanding and developing any system is est
     \end{figure}
     
     With this architecture, the process is streamlined and optimized by following the Single-Responsibility Principle (SRP) rule in programming. Wherein, the \textit{View} contains the web front-end web design/experience and logic for sending client requests to the server. For every request the client makes, is handled within the \textit{Controller}. Within this layer, it handles the logic for communicating within client-to-server requests and responses. Within this layer, will handle exceptions, validations, Data Access Objects (DAO), APIs, and many more \cite{mdn12023}.
-    \\
     
     For every \textit{Controller} request to the Database, the \textit{Model} layer is responsible for interacting with the database. The \textit{Model} encapsulates the data and logic necessary for business operations, ensuring a clean separation of concerns. This architecture allows each component to focus on its specific responsibility, leading to a more maintainable and scalable system \cite{mdn12023} \cite{wikipedia12024}. 
 

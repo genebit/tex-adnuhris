@@ -539,7 +539,6 @@ In our honor, we declare that we did not pass off as our own the work done by an
 \end{center}
 
 \bigskip
-\bigskip
 \noindent
 This declaration is witnessed by:
 \\\\
