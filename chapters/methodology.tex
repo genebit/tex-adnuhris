@@ -1,0 +1,298 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Methodology}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Development Model}
+In the development process of the system, the developers will utilize the Rapid Application Development (RAD) model as a project management strategy. This methodology is characterized by an iterative approach in the software development process, which begins with the specification of requirements from the users and proceeds through rapid prototyping iterative delivery, and continual maintenance for the currently completed software. This methodology is well-suited for the study as it provides researchers a clear overview to follow from the beginning to the end, making it easier to track each step's progress as well as make sure everything went according to the plan. Moreover, the RAD model is perfect to use for projects with expedited schedules and evolving requirements as it lays a strong emphasis on speed, adaptability, and user-centric design. 
+\\
+
+The implementation of RAD provides a substantial advantage in developing the HRIS application. In terms of speed in development, RAD makes it possible to develop and release new features, which makes it ideal for projects with tight deadlines. And because of its adaptability, it can accommodate changes in requirements even at the end of the development cycle, guaranteeing that the result fulfills the requirements of the users. With the user-centric nature of RAD, it includes user feedback in every iteration, which could increase user satisfaction with the finished product. Furthermore, this methodology includes a risk reduction aspect which implies that early prototypes can help in recognizing any potential issues and reducing risks associated with functionality and usability. Due to RAD's iteration methodology, the HRIS system may be continuously improved in response to user feedback and changing educational requirements, keeping it updated and efficient in providing the desired outcomes.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/fig-2.png}
+    \caption{Rapid Application Development (RAD) Model.}
+    \label{fig:enter-label}
+\end{figure}
+    
+\section{System Analysis}
+The system analysis phase of the HRIS application development involves utilizing various methods to understand and define the system's functional and data requirements. These include information gathering, analytical methods, personnel consultation assessments, and content analysis. These methods aid in identifying user needs, defining system functionalities, and establishing the database schema. Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
+
+    \subsection{Swim-lane Diagram}
+    The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University faculty employee, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
+    \\
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/fig-4.png}
+        \caption{HRIS Swim-lane Diagram Model.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    Each branch admin area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. For every branch admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
+    \\
+
+    Besides this, an admin can also generate different kinds of reports within the system e.g., performing data extraction, queries, employee performance evaluation, COE reports, contracts/appointment generation, etc.
+
+    \subsection{Use Case Diagram}
+    
+    The use case diagram serves as a visual representation of the functional requirements of the system from an external user's perspective. It illustrates the interactions between users and the system, showcasing the various use cases and how they relate to each other. In the context of the HRIS application, the use case diagram will outline the different functionalities that users can perform within the system, such as employee management, payroll processing, and performance evaluation. By mapping out these interactions, the use case diagram helps in identifying the system's behavior and the roles of different users in the HRIS application.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/fig-6.png}
+        \caption{HRIS Use Case Diagram Model.}
+        \label{fig:enter-label}
+    \end{figure}
+    
+    \subsection{Entity Relational Diagram}
+    
+    The Entity Relational Diagram (ERD) will be used to visually represent the database structure that defines the relationships between different entities in the system and how they are related to one another through cardinalities and relationships. In the case of the HRIS application, MIS has provided ready access to the database scheme in preparation for the migration process. This ERD represents the various entities such as employees, departments, positions, and their relationships with each other. 
+    \\
+    
+    Creating an ERD will allow the developers to design a database schema that accurately represents the data requirements of the HRIS system. This diagram is not only crucial for ensuring data integrity, normalization, and efficient data retrieval, but will also standardize and comply with the DBA requirements of the MIS for merge request and reviewing processes.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/fig-erd-hris.png}
+        \caption{HRIS Core ERD Model.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/fig-erd-timesys.png}
+        \caption{HRIS TIMESYS ERD Model.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/fig-erd-leavesys.png}
+        \caption{HRIS LEAVESYS ERD Model.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/fig-erd-facsys.png}
+        \caption{HRIS FACSYS ERD Model.}
+        \label{fig:enter-label}
+    \end{figure}
+    
+    \subsection{Gantt Chart}
+    
+    Gantt chart allows for a visual representation of the project schedule that outlines the tasks, milestones, and dependencies throughout the development time. In connection with the development of project management strategy through RAD, the HRIS application's use of a Gantt chart will help in planning and tracking the project's progress. It will break down the development process into specific tasks, assign responsibilities, and establish timelines for each phase of the project.
+    \\
+    
+    With this, the development team can effectively manage resources, monitor progress, and ensure that the project stays on track to meet the specified deadlines.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/fig-5.png}
+        \caption{HRIS Gantt Chart Timeline.}
+        \label{fig:enter-label}
+    \end{figure}
+
+\section{Data Migration Plan}
+
+\section{System Testing Plan}
+
+    \subsection{Objectives}
+
+    The system testing phase aims to comprehensively evaluate the functionality, performance, and reliability of the application. To ensure a thorough assessment, we have established the following key objectives within the system testing plan:
+    
+    \begin{enumerate}
+        \item Verify the functionality of all system features and modules.
+        \item Ensure the system meets all specified requirements.
+        \item Identify and document any bugs or issues.
+        \item Validate the system's performance and response times.
+        \item Test the user interface for usability and intuitiveness.
+        \item Confirm data integrity and security measures.
+        \item Assess the system's compatibility with different browsers and devices.
+    \end{enumerate}
+
+    \subsection{Participants}
+
+    Throughout the testing phase, the participants will include the HR managers as well as the Information System Administrator, and the DBA Administrators.
+
+    \subsection{Equipment and Hardware Requirements}
+
+    The requirements for using the application is minimal due to its chosen deployed platform -- web. The application will only require any modern device that can access the internet through modern up-to-date browsers; specifically Google Chrome version 96 and above. 
+    \\ 
+    
+    The testing phase will be conducted within University grounds as it will require the University's internal network for it to be accessed. 
+
+\section{System Deployment Plan}
+
+This section contains some of the high-level tasks and considerations that will be addressed during the deployment phase of the newly developed and migrated ADNU HRIS.
+
+    \subsection{Deployment Planning}
+        
+        The deployment plan identifies the requirements and responsibilities of both the client and the development team in preparation for deployment. This includes accomplishing HR requirements -- HR core modules, TIMESYS, LEAVESYS, and FACSYS after reaching satisfaction within the testing plan.
+
+    \subsection{Resources}
+        \subsubsection{Facilities}
+
+        The facilities required for testing and deployment to the new HRIS will be conducted within the HR office grounds equipped with modern computers as well a reliable and high-speed internet connection.
+
+        \subsubsection{Hardware}
+
+        The hardware required for running the application shall include:
+
+        \begin{enumerate}
+            \item Desktop Computers/Laptops
+            \begin{enumerate}
+                \item \textbf{Processor:} Minimum Intel Core i3 or AMD equivalent
+                \item \textbf{RAM:} Minimum of 4GB (recommended 8GB or higher)
+                \item \textbf{Storage:} Minimum of 128GB (recommended 256GB or higher)
+            \end{enumerate}
+            
+            \item Backup and Recovery Hardware
+            \begin{enumerate}
+                \item \textbf{Backup Power supply:} This is to avoid downtime during any power outages to ensure uninterrupted workflow. Ensure that there is a Uninterruptible Power Supply (UPS) systems for critical hardware.
+                
+                \item \textbf{Electric Generators:} This is to for any extend outages that can occur within operations time. This ensures that the University can still cater and be operational despite the outages.
+            \end{enumerate}
+            
+            \item Peripheral Devices
+            \begin{enumerate}
+                \item \textbf{DTR Scanner:} The HR module TIMESYS will utilize the DTR Scanner for employee attendance purposes.
+                \item \textbf{RFID Scanner:} The RFID scanner will be utilized in support for the DTR within HR.
+            \end{enumerate}
+            
+        \end{enumerate}
+
+        \subsubsection{Support Software}
+
+        As the project will utilize Oracle for the data migration, the supported software shall be to use Oracle 12c with instantclient12 installed and sqldeveloper for the database management solution. 
+        \\
+
+        Being a web-based application, the project requires to run on modern browsers with version 96 and above for Google Chrome. This ensures better up-to-date features and better security patches for each devices.
+
+        \subsubsection{Support Documentation}
+
+        The documentation required to support the application shall include:
+
+        \begin{itemize}
+            \item[] \textbf{User Manuals:} Detailed guides for end-users to navigate and utilize the HRIS effectively.
+            \item[] \textbf{Technical Documentation:} In-depth documentation for developers detailing the system architecture, database schema, and configuration settings.
+            \item[] \textbf{Training Materials:} Resources for training sessions, including slides, and user manuals.
+            \item[] \textbf{FAQs and Troubleshooting Guides:} Common issues and their resolutions to assist users and support staff under user manual.
+            \item[] \textbf{System Requirements:} Specifications for hardware, software, and network configurations needed to run the new HRIS.
+        \end{itemize}
+
+    \subsection{Deployment Strategies}
+    
+    The project will be deployed through a series of code review, database review, iteration, and installation of the developed app to the server after a series of testing and acceptance to the application. This process involves multiple personnel including the DB Administrator, Senior Application Developer, and Information System Administrator. 
+    
+    \subsection{Contingencies}
+    
+    Contingency plans are ensured to mitigate any potential issues that may arise during and after deployment, the following contingency plans will be put in place:
+
+    \begin{itemize}
+        \item[] \textbf{Rollback Plan:} A rollback strategy will be developed and practiced for each implementation to revert to the previous system in case of any critical failures during deployment. This includes utilizing version controls and maintaining a full backup of the old system.
+
+        \item[] \textbf{Performance Monitoring:} Includes continuous monitor of system performance post-deployment through feedback and user reports from the HR for any performance degrade.
+    \end{itemize}
+
+    \subsection{Compatibility Strategies}
+ 
+    To ensure smooth deployment and integration of the new ADNU HRIS, the following compatibility strategies will be implemented:
+    
+    \begin{itemize}
+        \item[] \textbf{System Compatibility Testing:} Rigorous testing will be conducted to ensure the new HRIS is compatible with existing hardware, software, and network infrastructure at ADNU.
+        
+        \item[] \textbf{Browser Compatibility:} The web-based application will be tested across multiple browsers and versions to ensure consistent functionality and appearance.
+        
+        \item[] \textbf{Integration Testing:} Comprehensive testing will be performed to verify seamless integration with other existing systems and databases at ADNU.
+        
+        \item[] \textbf{Legacy System Compatibility:} Where necessary, interfaces or middleware will be developed to ensure compatibility with any legacy systems that need to interact with the new HRIS.
+        
+        \item[] \textbf{Scalability Testing:} The system will be tested to ensure it can handle increased load and user numbers as the university grows. This includes data optimization during any reports or querying. 
+    \end{itemize}
+    
+\section{System Snapshots}
+
+In this section, contains some of the few initial screen mock-ups for redesigning among the major services of the previous HR system. This includes samples high-fidelity wire frame made in Figma. This allows for better visualization to the expected output for the new ADNU HRIS.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/login.png}
+        \caption{New HRIS Login Page.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    The new design displays the redesigned login page. It features a clean, modern interface with input fields for username and password, as well as a prominent login button. The design emphasizes user-friendliness and security for accessing the HRIS platform.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/manager.png}
+        \caption{New HRIS Manager Page.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    The figure presents the newly designed HRIS Manager page. This includes mainly making use of better user experience with enlarged buttons and easier navigation with the use of better UI layout.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/data-extraction.png}
+        \caption{New HRIS Data Extraction Page.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    This figure showcases the new Data Extraction Page. The interface is designed to facilitate efficient retrieval of HR data, likely offering options for customizable reports, data filtering, and export functionalities.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/gest.png}
+        \caption{New General Employment Status Tracker Page.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    This figure illustrates the new General Employment Status Tracker (GEST) page. The GEST interface likely provides a comprehensive view of employee statuses across the organization. It includes employment types, contract durations, leave statuses, and other key indicators of workforce composition. 
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/pi-1.png}
+        \caption{New Personal Information Page Tab 1.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    This figure displays the first tab of the new Personal Information Page. This interface is designed to segment and categories each forms to not overload the user with multiple fields. In this section contains their personal information.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/pi-2.png}
+        \caption{New Personal Information Page Tab 2.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    This figure displays the second tab of the new Personal Information Page. In this section contains their contact information.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/pi-3.png}
+        \caption{New Personal Information Page Tab 3.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    This figure displays the last tab of the new Personal Information Page. In this section contains their employee information.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/table-central.png}
+        \caption{New HRIS Table Central Page.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    This figure displays the HRIS Table Central module wherein, managers can manage certain sectors and department information and make updates within the University.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/app/coe.png}
+        \caption{New HRIS Certificate of Employment Processing Page.}
+        \label{fig:enter-label}
+    \end{figure}
+
+    This interface is designed to streamline the creation and issuance of employment certificates. Managers can select employees and generate COE for each University personnel.
