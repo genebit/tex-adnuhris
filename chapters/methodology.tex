@@ -1,11 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Methodology}
+% \chapter{Methodology}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Development Model}
-In the development process of the system, the developers will utilize the Rapid Application Development (RAD) model as a project management strategy. This methodology is characterized by an iterative approach in the software development process, which begins with the specification of requirements from the users and proceeds through rapid prototyping iterative delivery, and continual maintenance for the currently completed software. This methodology is well-suited for the study as it provides researchers a clear overview to follow from the beginning to the end, making it easier to track each step's progress as well as make sure everything went according to the plan. Moreover, the RAD model is perfect to use for projects with expedited schedules and evolving requirements as it lays a strong emphasis on speed, adaptability, and user-centric design. 
-
-The implementation of RAD provides a substantial advantage in developing the HRIS application. In terms of speed in development, RAD makes it possible to develop and release new features, which makes it ideal for projects with tight deadlines. And because of its adaptability, it can accommodate changes in requirements even at the end of the development cycle, guaranteeing that the result fulfills the requirements of the users. With the user-centric nature of RAD, it includes user feedback in every iteration, which could increase user satisfaction with the finished product. Furthermore, this methodology includes a risk reduction aspect which implies that early prototypes can help in recognizing any potential issues and reducing risks associated with functionality and usability. Due to RAD's iteration methodology, the HRIS system may be continuously improved in response to user feedback and changing educational requirements, keeping it updated and efficient in providing the desired outcomes.
+In the development process of the system, the developers will utilize the Rapid Application Development (RAD) model as a project management strategy. This methodology is characterized by an iterative approach in the software development process, which begins with the specification of requirements from the users and proceeds through rapid prototyping iterative delivery, and continual maintenance for the currently completed software. This methodology is well-suited for the study as it provides researchers a clear overview to follow from the beginning to the end, making it easier to track each step's progress as well as make sure everything went according to the plan. Moreover, the RAD model is perfect to use for projects with expedited schedules and evolving requirements as it lays a strong emphasis on speed, adaptability, and user-centric design.
 
 \begin{figure}[H]
     \centering
@@ -14,78 +12,78 @@ The implementation of RAD provides a substantial advantage in developing the HRI
     \label{fig:rad}
 \end{figure}
     
-\section{System Analysis}
-The system analysis phase of the HRIS application development involves utilizing various methods to understand and define the system's functional and data requirements. These include information gathering, analytical methods, personnel consultation assessments, and content analysis. These methods aid in identifying user needs, defining system functionalities, and establishing the database schema. Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
+% \section{System Analysis}
+% The system analysis phase of the HRIS application development involves utilizing various methods to understand and define the system's functional and data requirements. These include information gathering, analytical methods, personnel consultation assessments, and content analysis. These methods aid in identifying user needs, defining system functionalities, and establishing the database schema. Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
 
-    \subsection{Swim-lane Diagram}
-    The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University faculty employee, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
+\section{Swim-lane Diagram}
+The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University faculty employee, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{figures/images/swimlane.png}
-        \caption{HRIS Swim-lane Diagram Model.}
-        \label{fig:swimlane}
-    \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/images/swimlane.png}
+    \caption{HRIS Swim-lane Diagram Model.}
+    \label{fig:swimlane}
+\end{figure}
 
-    Each branch admin area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. For every branch admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
+Each branch admin area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. For every branch admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
 
-    Besides this, an admin can also generate different kinds of reports within the system e.g., performing data extraction, queries, employee performance evaluation, COE reports, contracts/appointment generation, etc.
+Besides this, an admin can also generate different kinds of reports within the system e.g., performing data extraction, queries, employee performance evaluation, COE reports, contracts/appointment generation, etc.
 
-    \subsection{Use Case Diagram}
+\section{Use Case Diagram}
+
+The use case diagram serves as a visual representation of the functional requirements of the system from an external user's perspective. It illustrates the interactions between users and the system, showcasing the various use cases and how they relate to each other. In the context of the HRIS application, the use case diagram will outline the different functionalities that users can perform within the system, such as employee management, payroll processing, and performance evaluation. By mapping out these interactions, the use case diagram helps in identifying the system's behavior and the roles of different users in the HRIS application.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/images/use-case.png}
+    \caption{HRIS Use Case Diagram Model.}
+    \label{fig:use-case}
+\end{figure}
+
+\section{Entity Relational Diagram}
+
+The Entity Relational Diagram (ERD) visually represents the database structure and relationships between entities in the HRIS application. It includes entities like employees, departments, positions, and their relationships.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/images/erd-hris.png}
+    \caption{HRIS Core ERD Model.}
+    \label{fig:erd-hris}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/images/erd-timesys.png}
+    \caption{HRIS TIMESYS ERD Model.}
+    \label{fig:erd-timesys}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/images/erd-leavesys.png}
+    \caption{HRIS LEAVESYS ERD Model.}
+    \label{fig:erd-leavesys}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/images/erd-facsys.png}
+    \caption{HRIS FACSYS ERD Model.}
+    \label{fig:erd-facsys}
+\end{figure}
     
-    The use case diagram serves as a visual representation of the functional requirements of the system from an external user's perspective. It illustrates the interactions between users and the system, showcasing the various use cases and how they relate to each other. In the context of the HRIS application, the use case diagram will outline the different functionalities that users can perform within the system, such as employee management, payroll processing, and performance evaluation. By mapping out these interactions, the use case diagram helps in identifying the system's behavior and the roles of different users in the HRIS application.
+\section{Gantt Chart}
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.9\linewidth]{figures/images/use-case.png}
-        \caption{HRIS Use Case Diagram Model.}
-        \label{fig:use-case}
-    \end{figure}
-    
-    \subsection{Entity Relational Diagram}
-    
-    The Entity Relational Diagram (ERD) visually represents the database structure and relationships between entities in the HRIS application. It includes entities like employees, departments, positions, and their relationships.
+Gantt chart allows for a visual representation of the project schedule that outlines the tasks, milestones, and dependencies throughout the development time. In connection with the development of project management strategy through RAD, the HRIS application's use of a Gantt chart will help in planning and tracking the project's progress. It will break down the development process into specific tasks, assign responsibilities, and establish timelines for each phase of the project.
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-hris.png}
-        \caption{HRIS Core ERD Model.}
-        \label{fig:erd-hris}
-    \end{figure}
+With this, the development team can effectively manage resources, monitor progress, and ensure that the project stays on track to meet the specified deadlines.
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-timesys.png}
-        \caption{HRIS TIMESYS ERD Model.}
-        \label{fig:erd-timesys}
-    \end{figure}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-leavesys.png}
-        \caption{HRIS LEAVESYS ERD Model.}
-        \label{fig:erd-leavesys}
-    \end{figure}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-facsys.png}
-        \caption{HRIS FACSYS ERD Model.}
-        \label{fig:erd-facsys}
-    \end{figure}
-    
-    \subsection{Gantt Chart}
-    
-    Gantt chart allows for a visual representation of the project schedule that outlines the tasks, milestones, and dependencies throughout the development time. In connection with the development of project management strategy through RAD, the HRIS application's use of a Gantt chart will help in planning and tracking the project's progress. It will break down the development process into specific tasks, assign responsibilities, and establish timelines for each phase of the project.
-    
-    With this, the development team can effectively manage resources, monitor progress, and ensure that the project stays on track to meet the specified deadlines.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{figures/images/gantt-chart.png}
-        \caption{HRIS Gantt Chart Timeline.}
-        \label{fig:gantt-chart}
-    \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/images/gantt-chart.png}
+    \caption{HRIS Gantt Chart Timeline.}
+    \label{fig:gantt-chart}
+\end{figure}
 
 % \section{Data Migration Plan}
 
