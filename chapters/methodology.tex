@@ -44,9 +44,7 @@ The system analysis phase of the HRIS application development involves utilizing
     
     \subsection{Entity Relational Diagram}
     
-    The Entity Relational Diagram (ERD) will be used to visually represent the database structure that defines the relationships between different entities in the system and how they are related to one another through cardinalities and relationships. In the case of the HRIS application, MIS has provided ready access to the database scheme in preparation for the migration process. This ERD represents the various entities such as employees, departments, positions, and their relationships with each other. 
-    
-    Creating an ERD will allow the developers to design a database schema that accurately represents the data requirements of the HRIS system. This diagram is not only crucial for ensuring data integrity, normalization, and efficient data retrieval, but will also standardize and comply with the DBA requirements of the MIS for merge request and reviewing processes.
+    The Entity Relational Diagram (ERD) visually represents the database structure and relationships between entities in the HRIS application. It includes entities like employees, departments, positions, and their relationships.
 
     \begin{figure}[H]
         \centering
@@ -89,155 +87,155 @@ The system analysis phase of the HRIS application development involves utilizing
         \label{fig:gantt-chart}
     \end{figure}
 
-\section{Data Migration Plan}
+% \section{Data Migration Plan}
 
-    \subsection{Objectives}
+%     \subsection{Objectives}
 
-    The data migration plan aims to ensure a smooth and efficient transition of data from the existing HRIS system to the new HRIS application. The key objectives of the data migration plan include:
+%     The data migration plan aims to ensure a smooth and efficient transition of data from the existing HRIS system to the new HRIS application. The key objectives of the data migration plan include:
 
-    \begin{enumerate}
-        \item Identify and extract relevant data from the existing HRIS system.
-        \item Transform and map the data to align with the new HRIS database schema.
-        \item Load the data into the new HRIS application while ensuring data integrity and accuracy.
-        \item Validate the migrated data to ensure completeness and consistency.
-        \item Minimize downtime and disruptions to the HR operation.
-        \item Document the data migration process and outcomes for future reference.
-    \end{enumerate}
+%     \begin{enumerate}
+%         \item Identify and extract relevant data from the existing HRIS system.
+%         \item Transform and map the data to align with the new HRIS database schema.
+%         \item Load the data into the new HRIS application while ensuring data integrity and accuracy.
+%         \item Validate the migrated data to ensure completeness and consistency.
+%         \item Minimize downtime and disruptions to the HR operation.
+%         \item Document the data migration process and outcomes for future reference.
+%     \end{enumerate}
 
-    \subsection{Data Migration Strategy}
+%     \subsection{Data Migration Strategy}
 
-    The data migration strategy will involve the following key steps:
+%     The data migration strategy will involve the following key steps:
     
-        \subsubsection{Assessment and Planning}
-            This phase invovles identifying the key stakeholders, analyzing the current HRIS that being utilized, gathering requirement for the new system. Having a proper assessment and planning are crucial in understanding the scope of the migration, identifying potential risks, and setting clear objectives. This phase ensures that all stakeholders are aligned and that the migration plan addresses all necessary aspects of the project. Also, effective planning will help mitigate risks and lays a solid foundation for the migration process.
+%         \subsubsection{Assessment and Planning}
+%             This phase invovles identifying the key stakeholders, analyzing the current HRIS that being utilized, gathering requirement for the new system. Having a proper assessment and planning are crucial in understanding the scope of the migration, identifying potential risks, and setting clear objectives. This phase ensures that all stakeholders are aligned and that the migration plan addresses all necessary aspects of the project. Also, effective planning will help mitigate risks and lays a solid foundation for the migration process.
 
-        \subsubsection{Data Mapping and Cleansing}
-            In this phase, it includes aligning the data fields from the legacy system to the new HRIS and correcting data quality issues. To ensure that all important data is correctly transferred to the new system, having an proper or accurate data mapping is needed. This phase also includes data cleansing as it is essential for maintaining data integrity and ensuring that the new system operates with accurate and reliable data. This step is critical for preventing data-related issues post-migration and ensuring a smooth transition.
+%         \subsubsection{Data Mapping and Cleansing}
+%             In this phase, it includes aligning the data fields from the legacy system to the new HRIS and correcting data quality issues. To ensure that all important data is correctly transferred to the new system, having an proper or accurate data mapping is needed. This phase also includes data cleansing as it is essential for maintaining data integrity and ensuring that the new system operates with accurate and reliable data. This step is critical for preventing data-related issues post-migration and ensuring a smooth transition.
 
-        \subsubsection{Migration Design}
-            The Migration design involves selecting migration tools  and deciding on the migration approach. Choosing the necessary and right tools and approach can significantly reduce the risk of errors and downtime. With a well-designed migration process ensures that data is transferred efficiently and securely. This step is important for optimizing the migration process and ensuring that it aligns with the project’s goals and constraints
+%         \subsubsection{Migration Design}
+%             The Migration design involves selecting migration tools  and deciding on the migration approach. Choosing the necessary and right tools and approach can significantly reduce the risk of errors and downtime. With a well-designed migration process ensures that data is transferred efficiently and securely. This step is important for optimizing the migration process and ensuring that it aligns with the project’s goals and constraints
         
-    \subsection{Execution Phase}
-        \subsubsection{Pilot Migration}
-            Conducting a pilot migration involves setting up a test environment and performing a trial run with a subset of data. A pilot migration helps identify potential issues and validate the migration process before the full migration. Also, with this step it helpful for minimizing risks and ensuring a smooth transition. It allows for adjustments to be made based on the findings from the pilot, thereby improving the overall migration strategy
+%     \subsection{Execution Phase}
+%         \subsubsection{Pilot Migration}
+%             Conducting a pilot migration involves setting up a test environment and performing a trial run with a subset of data. A pilot migration helps identify potential issues and validate the migration process before the full migration. Also, with this step it helpful for minimizing risks and ensuring a smooth transition. It allows for adjustments to be made based on the findings from the pilot, thereby improving the overall migration strategy
 
-        \subsubsection{Full Migration}
-            In this full migration, it involves extracting, transforming, and loading the full dataset into the new system. Proper execution ensures that all data is accurately transferred and that the new system is ready for use. Validation and reconciliation are essential to confirm data integrity and completeness. This step is the core of the project and requires meticulous planning and execution to ensure success
+%         \subsubsection{Full Migration}
+%             In this full migration, it involves extracting, transforming, and loading the full dataset into the new system. Proper execution ensures that all data is accurately transferred and that the new system is ready for use. Validation and reconciliation are essential to confirm data integrity and completeness. This step is the core of the project and requires meticulous planning and execution to ensure success
 
-    \subsection{Post-Migration Phase}
-        Post-migration activities include system testing, data validation, user training, and providing support. These activities ensure that the new system operates correctly, that data integrity is maintained, and that users are comfortable with the new system. Ongoing support helps address any issues that arise after the migration. This step is crucial for ensuring the long-term success of the new system and for achieving user satisfaction
+%     \subsection{Post-Migration Phase}
+%         Post-migration activities include system testing, data validation, user training, and providing support. These activities ensure that the new system operates correctly, that data integrity is maintained, and that users are comfortable with the new system. Ongoing support helps address any issues that arise after the migration. This step is crucial for ensuring the long-term success of the new system and for achieving user satisfaction
     
-\section{System Testing Plan}
+% \section{System Testing Plan}
 
-    The system testing phase aims to comprehensively evaluate the functionality, performance, and reliability of the application. To ensure a thorough assessment, we have established the following key objectives within the system testing plan:
+%     The system testing phase aims to comprehensively evaluate the functionality, performance, and reliability of the application. To ensure a thorough assessment, we have established the following key objectives within the system testing plan:
     
-    \begin{enumerate}
-        \item Verify the functionality of all system features and modules.
-        \item Ensure the system meets all specified requirements.
-        \item Identify and document any bugs or issues.
-        \item Validate the system's performance and response times.
-        \item Test the user interface for usability and intuitiveness.
-        \item Confirm data integrity and security measures.
-        \item Assess the system's compatibility with different browsers and devices.
-    \end{enumerate}
+%     \begin{enumerate}
+%         \item Verify the functionality of all system features and modules.
+%         \item Ensure the system meets all specified requirements.
+%         \item Identify and document any bugs or issues.
+%         \item Validate the system's performance and response times.
+%         \item Test the user interface for usability and intuitiveness.
+%         \item Confirm data integrity and security measures.
+%         \item Assess the system's compatibility with different browsers and devices.
+%     \end{enumerate}
 
-    \subsection{Participants}
+%     \subsection{Participants}
 
-    Throughout the testing phase, the participants will include the HR managers as well as the Information System Administrator, and the DBA Administrators.
+%     Throughout the testing phase, the participants will include the HR managers as well as the Information System Administrator, and the DBA Administrators.
 
-    \subsection{Equipment and Hardware Requirements}
+%     \subsection{Equipment and Hardware Requirements}
 
-    The requirements for using the application is minimal due to its chosen deployed platform -- web. The application will only require any modern device that can access the internet through modern up-to-date browsers; specifically Google Chrome version 96 and above. 
+%     The requirements for using the application is minimal due to its chosen deployed platform -- web. The application will only require any modern device that can access the internet through modern up-to-date browsers; specifically Google Chrome version 96 and above. 
     
-    The testing phase will be conducted within University grounds as it will require the University's internal network for it to be accessed. 
+%     The testing phase will be conducted within University grounds as it will require the University's internal network for it to be accessed. 
 
-\section{System Deployment Plan}
+% \section{System Deployment Plan}
 
-This section contains some of the high-level tasks and considerations that will be addressed during the deployment phase of the newly developed and migrated ADNU HRIS.
+% This section contains some of the high-level tasks and considerations that will be addressed during the deployment phase of the newly developed and migrated ADNU HRIS.
 
-    \subsection{Deployment Planning}
+%     \subsection{Deployment Planning}
         
-        The deployment plan identifies the requirements and responsibilities of both the client and the development team in preparation for deployment. This includes accomplishing HR requirements -- HR core modules, TIMESYS, LEAVESYS, and FACSYS after reaching satisfaction within the testing plan.
+%         The deployment plan identifies the requirements and responsibilities of both the client and the development team in preparation for deployment. This includes accomplishing HR requirements -- HR core modules, TIMESYS, LEAVESYS, and FACSYS after reaching satisfaction within the testing plan.
 
-    \subsection{Resources}
-        \subsubsection{Facilities}
+%     \subsection{Resources}
+%         \subsubsection{Facilities}
 
-        The facilities required for testing and deployment to the new HRIS will be conducted within the HR office grounds equipped with modern computers as well a reliable and high-speed internet connection.
+%         The facilities required for testing and deployment to the new HRIS will be conducted within the HR office grounds equipped with modern computers as well a reliable and high-speed internet connection.
 
-        \subsubsection{Hardware}
+%         \subsubsection{Hardware}
 
-        The hardware required for running the application shall include:
+%         The hardware required for running the application shall include:
 
-        \begin{enumerate}
-            \item Desktop Computers/Laptops
-            \begin{enumerate}
-                \item \textbf{Processor:} Minimum Intel Core i3 or AMD equivalent
-                \item \textbf{RAM:} Minimum of 4GB (recommended 8GB or higher)
-                \item \textbf{Storage:} Minimum of 128GB (recommended 256GB or higher)
-            \end{enumerate}
+%         \begin{enumerate}
+%             \item Desktop Computers/Laptops
+%             \begin{enumerate}
+%                 \item \textbf{Processor:} Minimum Intel Core i3 or AMD equivalent
+%                 \item \textbf{RAM:} Minimum of 4GB (recommended 8GB or higher)
+%                 \item \textbf{Storage:} Minimum of 128GB (recommended 256GB or higher)
+%             \end{enumerate}
             
-            \item Backup and Recovery Hardware
-            \begin{enumerate}
-                \item \textbf{Backup Power supply:} This is to avoid downtime during any power outages to ensure uninterrupted workflow. Ensure that there is a Uninterruptible Power Supply (UPS) systems for critical hardware.
+%             \item Backup and Recovery Hardware
+%             \begin{enumerate}
+%                 \item \textbf{Backup Power supply:} This is to avoid downtime during any power outages to ensure uninterrupted workflow. Ensure that there is a Uninterruptible Power Supply (UPS) systems for critical hardware.
                 
-                \item \textbf{Electric Generators:} This is to for any extend outages that can occur within operations time. This ensures that the University can still cater and be operational despite the outages.
-            \end{enumerate}
+%                 \item \textbf{Electric Generators:} This is to for any extend outages that can occur within operations time. This ensures that the University can still cater and be operational despite the outages.
+%             \end{enumerate}
             
-            \item Peripheral Devices
-            \begin{enumerate}
-                \item \textbf{DTR Scanner:} The HR module TIMESYS will utilize the DTR Scanner for employee attendance purposes.
-                \item \textbf{RFID Scanner:} The RFID scanner will be utilized in support for the DTR within HR.
-            \end{enumerate}
+%             \item Peripheral Devices
+%             \begin{enumerate}
+%                 \item \textbf{DTR Scanner:} The HR module TIMESYS will utilize the DTR Scanner for employee attendance purposes.
+%                 \item \textbf{RFID Scanner:} The RFID scanner will be utilized in support for the DTR within HR.
+%             \end{enumerate}
             
-        \end{enumerate}
+%         \end{enumerate}
 
-        \subsubsection{Support Software}
+%         \subsubsection{Support Software}
 
-        As the project will utilize Oracle for the data migration, the supported software shall be to use Oracle 12c with instantclient12 installed and sqldeveloper for the database management solution. 
+%         As the project will utilize Oracle for the data migration, the supported software shall be to use Oracle 12c with instantclient12 installed and sqldeveloper for the database management solution. 
 
-        Being a web-based application, the project requires to run on modern browsers with version 96 and above for Google Chrome. This ensures better up-to-date features and better security patches for each devices.
+%         Being a web-based application, the project requires to run on modern browsers with version 96 and above for Google Chrome. This ensures better up-to-date features and better security patches for each devices.
 
-        \subsubsection{Support Documentation}
+%         \subsubsection{Support Documentation}
 
-        The documentation required to support the application shall include:
+%         The documentation required to support the application shall include:
 
-        \begin{itemize}
-            \item[] \textbf{User Manuals:} Detailed guides for end-users to navigate and utilize the HRIS effectively.
-            \item[] \textbf{Technical Documentation:} In-depth documentation for developers detailing the system architecture, database schema, and configuration settings.
-            \item[] \textbf{Training Materials:} Resources for training sessions, including slides, and user manuals.
-            \item[] \textbf{FAQs and Troubleshooting Guides:} Common issues and their resolutions to assist users and support staff under user manual.
-            \item[] \textbf{System Requirements:} Specifications for hardware, software, and network configurations needed to run the new HRIS.
-        \end{itemize}
+%         \begin{itemize}
+%             \item[] \textbf{User Manuals:} Detailed guides for end-users to navigate and utilize the HRIS effectively.
+%             \item[] \textbf{Technical Documentation:} In-depth documentation for developers detailing the system architecture, database schema, and configuration settings.
+%             \item[] \textbf{Training Materials:} Resources for training sessions, including slides, and user manuals.
+%             \item[] \textbf{FAQs and Troubleshooting Guides:} Common issues and their resolutions to assist users and support staff under user manual.
+%             \item[] \textbf{System Requirements:} Specifications for hardware, software, and network configurations needed to run the new HRIS.
+%         \end{itemize}
 
-    \subsection{Deployment Strategies}
+%     \subsection{Deployment Strategies}
     
-    The project will be deployed through a series of code review, database review, iteration, and installation of the developed app to the server after a series of testing and acceptance to the application. This process involves multiple personnel including the DB Administrator, Senior Application Developer, and Information System Administrator. 
+%     The project will be deployed through a series of code review, database review, iteration, and installation of the developed app to the server after a series of testing and acceptance to the application. This process involves multiple personnel including the DB Administrator, Senior Application Developer, and Information System Administrator. 
     
-    \subsection{Contingencies}
+%     \subsection{Contingencies}
     
-    Contingency plans are ensured to mitigate any potential issues that may arise during and after deployment, the following contingency plans will be put in place:
+%     Contingency plans are ensured to mitigate any potential issues that may arise during and after deployment, the following contingency plans will be put in place:
 
-    \begin{itemize}
-        \item[] \textbf{Rollback Plan:} A rollback strategy will be developed and practiced for each implementation to revert to the previous system in case of any critical failures during deployment. This includes utilizing version controls and maintaining a full backup of the old system.
+%     \begin{itemize}
+%         \item[] \textbf{Rollback Plan:} A rollback strategy will be developed and practiced for each implementation to revert to the previous system in case of any critical failures during deployment. This includes utilizing version controls and maintaining a full backup of the old system.
 
-        \item[] \textbf{Performance Monitoring:} Includes continuous monitor of system performance post-deployment through feedback and user reports from the HR for any performance degrade.
-    \end{itemize}
+%         \item[] \textbf{Performance Monitoring:} Includes continuous monitor of system performance post-deployment through feedback and user reports from the HR for any performance degrade.
+%     \end{itemize}
 
-    \subsection{Compatibility Strategies}
+%     \subsection{Compatibility Strategies}
  
-    To ensure smooth deployment and integration of the new ADNU HRIS, the following compatibility strategies will be implemented:
+%     To ensure smooth deployment and integration of the new ADNU HRIS, the following compatibility strategies will be implemented:
     
-    \begin{itemize}
-        \item[] \textbf{System Compatibility Testing:} Rigorous testing will be conducted to ensure the new HRIS is compatible with existing hardware, software, and network infrastructure at ADNU.
+%     \begin{itemize}
+%         \item[] \textbf{System Compatibility Testing:} Rigorous testing will be conducted to ensure the new HRIS is compatible with existing hardware, software, and network infrastructure at ADNU.
         
-        \item[] \textbf{Browser Compatibility:} The web-based application will be tested across multiple browsers and versions to ensure consistent functionality and appearance.
+%         \item[] \textbf{Browser Compatibility:} The web-based application will be tested across multiple browsers and versions to ensure consistent functionality and appearance.
         
-        \item[] \textbf{Integration Testing:} Comprehensive testing will be performed to verify seamless integration with other existing systems and databases at ADNU.
+%         \item[] \textbf{Integration Testing:} Comprehensive testing will be performed to verify seamless integration with other existing systems and databases at ADNU.
         
-        \item[] \textbf{Legacy System Compatibility:} Where necessary, interfaces or middleware will be developed to ensure compatibility with any legacy systems that need to interact with the new HRIS.
+%         \item[] \textbf{Legacy System Compatibility:} Where necessary, interfaces or middleware will be developed to ensure compatibility with any legacy systems that need to interact with the new HRIS.
         
-        \item[] \textbf{Scalability Testing:} The system will be tested to ensure it can handle increased load and user numbers as the university grows. This includes data optimization during any reports or querying. 
-    \end{itemize}
+%         \item[] \textbf{Scalability Testing:} The system will be tested to ensure it can handle increased load and user numbers as the university grows. This includes data optimization during any reports or querying. 
+%     \end{itemize}
     
 \section{System Snapshots}
 
