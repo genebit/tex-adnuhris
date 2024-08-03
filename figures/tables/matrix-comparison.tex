@@ -1,58 +1,88 @@
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-% \usepackage{multirow}
+% GENERIC table
 \begin{table}[H]
-\centering
-\resizebox{\textwidth}{!}
-{\begin{tabular}{@{}llcccc@{}}
-\toprule
-                                                       & \textbf{Modules}                                    & \multicolumn{1}{l}{\textbf{ADNU HRIS}}             & \multicolumn{1}{l}{\textbf{OMNI HR}}               & \multicolumn{1}{l}{\textbf{DEEL HR}}               & \multicolumn{1}{l}{\textbf{PAYCOR HCM}}            \\ \midrule
-\multicolumn{1}{c}{\multirow{19}{*}{\textbf{GENERIC}}} & Contacts                                            & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Data Extraction                                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Personal Info                                       & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & General Employee Status Tracker                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Employee Profile                                    & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Assignment Designation                              & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Assignment Archive                                  & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Faculty Rank                                        & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-\multicolumn{1}{c}{}                                   & Academic Record                                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Academic Awards                                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Professional License Record                         & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Training Attended Module                            & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Performance Evaluation                              & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & COE                                                 & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-\multicolumn{1}{c}{}                                   & COE Reports                                         & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-\multicolumn{1}{c}{}                                   & Contracts/Appointment Generation Reports            & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Health Record                                       & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Cloud-based                                         & \text{\ding{55}} & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multicolumn{1}{c}{}                                   & Learning Management                                 & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} & \checkmark                          \\
-\multirow{15}{*}{\textbf{TIMESYS}}                     & DTR Scanner                                         & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-                                                       & Attendance Module                                   & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Attendance Archive                                  & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-                                                       & Flexible Time Office                                & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Staff Attendance Report                             & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Calendar Management                                 & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \checkmark                          \\
-                                                       & Holiday Calendar Creation                           & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-                                                       & Work Schedule Scheme                                & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Assign Work Schedule Scheme                         & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Work Schedule Scheme Checker                        & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Tardines Module                                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Remarks Module                                      & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & AWOL Module                                         & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Overtime Module                                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Staff Monthly/Annual Attendance Report              & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-\multirow{6}{*}{\textbf{LEAVESYS}}                     & Leave Application                                   & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Leave Reason                                        & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Leave Credits                                       & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Leave Credits Scheme                                & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Assign Leave Credit Scheme                          & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-                                                       & Process Leave Application with Leave Credits Report & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
-\multirow{5}{*}{\textbf{FACSYS}}                       & Faculty Attendance                                  & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-                                                       & Faculty Schedule                                    & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-                                                       & Pending Faculty Schedule                            & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-                                                       & Required Class Hours                                & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
-                                                       & Process Faculty Attendance Report                   & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\ \cmidrule(l){2-6} 
-\end{tabular}}
-\caption{ADNU HRIS in comparison with other HRM/HCM systems.}
+    \centering
+    \begin{tabularx}{\textwidth}{|p{5cm}|p{2cm}|X|p{2cm}|X|p{2cm}|X|p{2cm}}
+        \toprule
+        \textbf{Modules}                                    & \textbf{ADNU HRIS}             & \textbf{OMNI HR}               & \textbf{DEEL HR}               & \textbf{PAYCOR HCM}            \\ \midrule
+        Contacts                                            & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Data Extraction                                     & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Personal Info                                       & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        General Employee Status Tracker                     & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Employee Profile                                    & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Assignment Designation                              & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Assignment Archive                                  & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Faculty Rank                                        & \checkmark                     & \ding{55}                      & \ding{55}                      & \ding{55}                      \\
+        Academic Record                                     & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Academic Awards                                     & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Professional License Record                         & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Training Attended Module                            & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Performance Evaluation                              & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        COE                                                 & \checkmark                     & \ding{55}                      & \ding{55}                      & \ding{55}                      \\
+        COE Reports                                         & \checkmark                     & \ding{55}                      & \ding{55}                      & \ding{55}                      \\
+        Contracts/Appointment Generation Reports            & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Health Record                                       & \checkmark                     & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Cloud-based                                         & \ding{55}                      & \checkmark                     & \checkmark                     & \checkmark                     \\
+        Learning Management                                 & \ding{55}                      & \ding{55}                      & \ding{55}                      & \checkmark                     \\ \bottomrule
+    \end{tabularx}
+    \caption{ADNU HRIS Core in comparison with other HRM/HCM systems.}
+    \label{tab:my_label}
+\end{table}
+
+% TIMESYS table
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|p{5cm}|p{2cm}|X|p{2cm}|X|p{2cm}|X|p{2cm}}
+        \toprule
+        \textbf{Modules}                                    & \textbf{ADNU HRIS}             & \textbf{OMNI HR}               & \textbf{DEEL HR}               & \textbf{PAYCOR HCM}            \\ \midrule
+        DTR Scanner                                         & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+        Attendance Module                                   & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Attendance Archive                                  & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+        Flexible Time Office                                & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Staff Attendance Report                             & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Calendar Management                                 & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \checkmark                          \\
+        Holiday Calendar Creation                           & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+        Work Schedule Scheme                                & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Assign Work Schedule Scheme                         & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Work Schedule Scheme Checker                        & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Tardines Module                                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Remarks Module                                      & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        AWOL Module                                         & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Overtime Module                                     & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Staff Monthly/Annual Attendance Report              & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\ \bottomrule
+    \end{tabularx}
+\caption{ADNU HRIS TIMESYS requirements in comparison with other HRM/HCM systems.}
 \label{tab:my_label}
+\end{table}
+
+% % LEAVESYS table
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|p{5cm}|p{2cm}|X|p{2cm}|X|p{2cm}|X|p{2cm}}
+        \toprule
+        \textbf{Modules}                                    & \textbf{ADNU HRIS}             & \textbf{OMNI HR}               & \textbf{DEEL HR}               & \textbf{PAYCOR HCM}            \\ \midrule
+        Leave Application                                   & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Leave Reason                                        & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Leave Credits                                       & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Leave Credits Scheme                                & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Assign Leave Credit Scheme                          & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\
+        Process Leave Application with Leave Credits Report & \checkmark                          & \checkmark                          & \checkmark                          & \checkmark                          \\ \bottomrule
+    \end{tabularx}
+    \caption{ADNU HRIS LEAVESYS requirements in comparison with other HRM/HCM systems.}
+    \label{tab:my_label}
+\end{table}
+
+% % FACSYS table
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|p{5cm}|p{2cm}|X|p{2cm}|X|p{2cm}|X|p{2cm}}
+        \toprule
+        \textbf{Modules}                                    & \textbf{ADNU HRIS}             & \textbf{OMNI HR}               & \textbf{DEEL HR}               & \textbf{PAYCOR HCM}            \\ \midrule
+        Faculty Attendance                                  & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+        Faculty Schedule                                    & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+        Pending Faculty Schedule                            & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+        Required Class Hours                                & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+        Process Faculty Attendance Report                   & \checkmark                          & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\ \bottomrule
+    \end{tabularx}
+    \caption{ADNU HRIS FACSYS requirements in comparison with other HRM/HCM systems.}
+    \label{tab:my_label}
 \end{table}
