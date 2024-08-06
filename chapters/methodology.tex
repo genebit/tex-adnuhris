@@ -15,21 +15,34 @@ The implementation of RAD provides a substantial advantage in developing the HRI
 \end{figure}
     
 \section{System Analysis}
-The system analysis phase of the HRIS application development involves utilizing various methods to understand and define the system's functional and data requirements. These include information gathering, analytical methods, personnel consultation assessments, and content analysis. These methods aid in identifying user needs, defining system functionalities, and establishing the database schema. Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
+The system analysis phase of the HRIS application development involves utilizing various methods to understand and define the system's functional and data requirements. These include information gathering, analytical methods, personnel consultation assessments, and content analysis. These methods aid in identifying user needs, defining system functionalities, and establishing the database schema. 
+
+Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
 
     \subsection{Swim-lane Diagram}
     The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University faculty employee, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
 
+    The identified roles i.e., Director, Sys. Admin, Attendance Monitoring and Checker, Training \& Dev. Specialist, Records Mgt. Specialist, Comp. \& Benefits Officer, ISS Officer, Recruitment \& Admin Staff, and Capability Bldg. Officer, are assigned specific tasks and responsibilities within the system. These responsibilities and privileges are outlined in table \ref*{tab:hris-basic-modules}. 
+
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{figures/images/swimlane.png}
-        \caption{HRIS Swim-lane Diagram Model.}
-        \label{fig:swimlane}
+        \includegraphics[width=1\linewidth]{figures/images/swimlane-admins.png}
+        \caption{HRIS Swim-lane Diagram Model for HR Management.}
+        \label{fig:swimlane-admins}
     \end{figure}
 
-    Each branch admin area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. For every branch admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
+    Each roles area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. Higher admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
 
-    Besides this, an admin can also generate different kinds of reports within the system e.g., performing data extraction, queries, employee performance evaluation, COE reports, contracts/appointment generation, etc.
+    Besides this, these admins can also generate different kinds of reports within the system e.g., performing data extraction, queries, employee performance evaluation, COE reports, contracts/appointment generation, etc.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/swimlane-sys-mgt.png}
+        \caption{HRIS Swim-lane Diagram Model for TIMESYS, FACSYS, and LEAVESYS Management.}
+        \label{fig:swimlane-sys-mgt}
+    \end{figure}
+
+    The system also includes modules for TIMESYS, FACSYS, and LEAVESYS. These modules are designed to manage employee attendance, faculty attendance, and employee leave applications, respectively. In the diagram, the identified roles along with their privilege are assigned to manage the three (3) SYS as well as allowing them to generate reports. Meanwhile, the Student Assistant Attendance Checker have lesser privilege and is assigned only to managing faculty attendance, faculty schedule, and managing pending faculty schedules.
 
     \subsection{Use Case Diagram}
     
