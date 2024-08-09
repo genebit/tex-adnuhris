@@ -1,3 +1,19 @@
 {
     "editor.wordWrap": "on",
+    // hide the latex compile files in the explorer
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.fls": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.ilg": true,
+        "**/*.ind": true,
+        "**/*.log": true,
+        "**/*.lof": true,
+        "**/*.idx": true,
+        "**/*.lot": true,
+        "**/*.synctex.gz": true,
+        "**/*.toc": true,
+    },
 }
