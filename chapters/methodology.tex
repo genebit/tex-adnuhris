@@ -46,7 +46,11 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
 
     \subsection{Use Case Diagram}
     
-    The use case diagram serves as a visual representation of the functional requirements of the system from an external user's perspective. It illustrates the interactions between users and the system, showcasing the various use cases and how they relate to each other. In the context of the HRIS application, the use case diagram will outline the different functionalities that users can perform within the system, such as employee management, payroll processing, and performance evaluation. By mapping out these interactions, the use case diagram helps in identifying the system's behavior and the roles of different users in the HRIS application.
+    The use case diagram serves as a visual representation of the functional requirements of the system from an external user’s perspective. It illustrates the interactions between users and the system, showcasing the various use cases and how they relate to each other. The HRIS application is divided into four primary modules: HRIS Basic Modules, TIMESYS, FACSYS, and LEAVESYS. Each module has specific use cases that define the functionalities and interactions within the system. Moreover, each module has different actors with specific roles and access levels, allowing for a comprehensive overview of the system’s behavior and user interactions.
+    
+    Additionally, the concept of ‘Manage’ refers to the access users have to create, view, edit, and archive data or information within specific modules, while the term ‘View’ refers to access for viewing data only. By mapping out these interactions and incorporating both ‘Manage’ and ‘View’ functionalities, the use case diagram helps in identifying the system’s behavior and the roles of different users in the HRIS application.
+
+    In the HRIS Basic Modules Use Case Diagram, alongside Performing Data Extraction and Managing/Viewing Performance Evaluation, the use cases are grouped into four primary functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. Each area extends to specific management or viewing capabilities. Employee Information Access covers personal data, profiles, health records, and professional licenses. Employment and Assignment Access encompasses employee assignments, their archives, and status information. Academic and Professional Development Access includes academic records, awards, and attended training sessions. Lastly, Certification and Reporting Access handles COE (Certificate of Employment) requests, reports, and contracts/appointments generation. This structure allows for efficient organization of various HRIS functions, providing comprehensive coverage of employee-related data management and access across different aspects of human resource operations.
 
     \begin{figure}[H]
         \centering
@@ -55,6 +59,8 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-1}
     \end{figure}
 
+    The figure \ref{fig:use-case-basic-1} shows the use case diagram for the System Admin within the HRIS Basic Modules. The System Admin has a full managing access to all use cases. This includes Performing Data Extraction, Managing Performance Evaluation and all the modules that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. This comprehensive access enables the System Admin to oversee and manage all aspects of the HRIS application, ensuring efficient and effective HR operations.
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-basic-2.png}
@@ -62,12 +68,16 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-2}
     \end{figure}
 
-    \begin{figure}[H]
+    The figure \ref{fig:use-case-basic-2} depicts the use case diagram for Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer within the HRIS Basic Modules. These three actors share identical access which is limited to view-only across most use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and all the use cases that encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. 
+
+    \begin{figure}[H] 
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-basic-3.png}
         \caption{HRIS Basic Modules Use Case Diagram: Director and Administrative Assistant.}
         \label{fig:use-case-basic-3}
     \end{figure}
+
+    The figure \ref{fig:use-case-basic-3} shows the use case diagram for the Director and Administrative Assistant within the HRIS Basic Modules. Both actors share access which is limited to view-only across all the use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and all the use cases that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. 
 
     \begin{figure}[H]
         \centering
@@ -76,12 +86,16 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-4}
     \end{figure}
 
+    The figure \ref{fig:use-case-basic-4} illustrates the use case diagram for the Records Management Specialist and ISS Officer.Both actors share the same access to the HRIS Basic Modules which is managing access to all use cases except one. This includes Performing Data Extraction, Managing Performance Evaluation, and all the use cases that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. The only exception is that, both actors can only view the employee status found in the Employment and Assignment Access functional area.
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-basic-5.png}
         \caption{HRIS Basic Modules Use Case Diagram: Training and Development Staff.}
         \label{fig:use-case-basic-5}
     \end{figure}
+    
+    The figure \ref{fig:use-case-basic-5} demonstrates the use case diagram for the Training and Development Staff within the HRIS Basic Modules. The actor has limited view access to the most of the use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and also the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that, the Training and Development Staff has the privilege to Manage the Trainings Attended of the employees found in the Academic and Professional Development Access functional area.
 
     \begin{figure}[H]
         \centering
@@ -90,12 +104,16 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-6}
     \end{figure}
 
+    The figure \ref{fig:use-case-basic-6} shows the use case diagram for Benefits and Wellness Specialist. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and also the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that, the Benefits and Wellness Specialist was able to Manage the Health Records of the employees which is found in the Employee Information Access functional area.
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-basic-7.png}
         \caption{HRIS Basic Modules Use Case Diagram: Capability Building Officer.}
         \label{fig:use-case-basic-7}
     \end{figure}
+
+    The figure \ref{fig:use-case-basic-7} illustrates the use case diagram for Capability Building Officer. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. Moreover, the Capability Building Officer has the privilege to Manage the Performance Evaluation of the employees.
 
     \begin{figure}[H]
         \centering
@@ -104,12 +122,23 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-8}
     \end{figure}
 
+    The figure \ref{fig:use-case-basic-8} illustrates the use case diagram for Recruitment Officer. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that,  in the Employee Information Access functional area, the Recruitment Officer has a distinct privilege which is to view, create, and update the personal information of the employees.
+
+
+    This section presents the use case diagram for the HRIS TIMESYS Module. The module involves four primary actors: System Admin, Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer. Each actor has specific access to various use cases within the TIMESYS module, enabling them to perform functions related to employee attendance monitoring and management.
+
+    The module encompasses several key use cases, including managing employee attendance. This extends to archived attendance records and the generation of attendance reports. Additionally, it covers use cases related to managing work schedules, overtime, and holidays. A distinct functional area is created specifically for categorizing the management of tardiness, AWOL (Absent Without Leave), and remarks. This structured approach ensures comprehensive coverage of all time-related aspects of employee management.
+
+    This diagram provides a comprehensive overview of the roles and responsibilities within the TIMESYS module, ensuring each actor has the necessary access to perform their tasks effectively.
+    
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-time-1.png}
         \caption{HRIS TIMESYS Module: System Admin and Attendance Monitoring Staff.}
         \label{fig:use-case-time-1}
     \end{figure}
+
+    The figure \ref{fig:use-case-time-1} demonstrates the use case diagram for the HRIS TIMESYS Module. The diagram shows the use cases for the System Admin and Attendance Monitoring Staff. Both of the actors has full managing access to all use cases found within the TIMESYS module. This comprehensive access enables the System Admin and Attendance Monitoring Staff to oversee and manage all aspects of the TIMESYS module, ensuring efficient and effective attendance monitoring and management.
 
     \begin{figure}[H]
         \centering
@@ -118,12 +147,19 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-time-2}
     \end{figure}
 
+    The figure \ref{fig:use-case-time-2} depicts the use case diagram for the HRIS TIMESYS Module. The diagram illustrates the use cases for the College Faculty Attendance Checker and Compensation and Benefits Officer. Both actors shares the same access which is limited to view-only access to all use cases found within the TIMESYS module. 
+
+
+    In this section, it presents the use case diagrams for the HRIS FACSYS Module. The module involves five primary actors: System Admin, Attendance Monitoring Staff, College Faculty Attendance Checker, Compensation and Benefits Officer, and Student Assistant Attendance Checker. Each actor has specific access to various use cases within the FACSYS module, enabling them to perform functions related to faculty attendance monitoring and management. The FACSYS module consists of three primary use cases: Managing Faculty Attendance, which extends to the generation of faculty attendance reports; Managing Faculty Schedule, which includes handling pending faculty schedules; and Managing Required Class Hours. This structure ensures comprehensive coverage of all faculty attendance-related aspects of employee management.
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-fac-1.png}
         \caption{HRIS FACSYS Module: System Admin, Attendance Monitoring Staff, and College Faculty Attendance Checker.}
         \label{fig:use-case-fac-1}
     \end{figure}
+
+    The figure \ref{fig:use-case-fac-1} illustrates the use case diagram the System Admin, Attendance Monitoring Staff, and College Faculty Attendance Checker within the HRIS FACSYS Module. These three actors shares the same full managing access to all use cases found within the FACSYS module. This comprehensive access enables the System Admin, Attendance Monitoring Staff, and College Faculty Attendance Checker to oversee and manage all aspects of the FACSYS module, ensuring efficient and effective faculty attendance monitoring and management.
 
     \begin{figure}[H]
         \centering
@@ -132,12 +168,28 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-fac-2}
     \end{figure}
 
+    The figure \ref{fig:use-case-fac-2} shows the use case diagram for the Compensation and Benefits Officer. The actor has limited view access to all of the use cases found within the FACSYS module. This includes Viewing Faculty Attendance, which extends to viewing of generated faculty attendance report; Viewing Faculty Schedule, which includes viewing of pending faculty schedules; and Viewing Required Class Hours. This structure ensures that the Compensation and Benefits Officer has the necessary access to view faculty attendance and schedule information, facilitating efficient monitoring and management of faculty attendance.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{figures/images/use-case-fac-3.png}
+        \caption{HRIS FACSYS Module: Student Asssitant Attendance Checker.}
+        \label{fig:use-case-fac-3}
+    \end{figure}
+
+    The figure \ref{fig:use-case-fac-3} illustrates the use case diagram for the Student Assistant Attendance Checker. The actor has limited manage access to the use cases found within the FACSYS module. The Student Assistant Attendance Checker has the privilege to manage faculty attendance but wasn't able to generate faculty attendance report, and manage faculty schedule as well as managing the pending faculty schedules. This structure ensures that the Student Assistant Attendance Checker has the necessary access to manage faculty attendance, facilitating efficient monitoring and management of faculty attendance. 
+    
+
+    This section presents the use case diagrams for the HRIS LEAVESYS Module. The module involves four primary actors: System Admin, Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer. Each actor has specific access to various use cases within the LEAVESYS module, enabling them to perform functions related to employee leave management and processing. The LEAVESYS module consists of two primary use cases: Managing Leave Applications and Managing Leave Credits. The Managing Leave Applications use case extends to the management of leave reasons, while both Managing Leave Applications and Managing Leave Credits extend to the generation of leave application with Credits Report. This structure allows for comprehensive leave management, encompassing application processing, credit tracking, and reporting functionalities.
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-leave-1.png}
         \caption{HRIS LEAVESYS Module: System Admin and Attendance Monitoring Staff.}
         \label{fig:use-case-leave-1}
     \end{figure}
+
+    Figure \ref{fig:use-case-leave-1} illustrates the use case diagram for the System Admin and Attendance Monitoring Staff within the HRIS LEAVESYS Module. Both actors share full management access to all use cases within the LEAVESYS module. This includes Managing Leave Applications, which extends to managing leave reasons; and Managing Leave Credits. Both of the actors are able to Generate Leave Application with Credits Report. This comprehensive access enables the System Admin and Attendance Monitoring Staff to oversee and manage all aspects of the LEAVESYS module, ensuring efficient and effective leave management and processing.
 
     \begin{figure}[H]
         \centering
@@ -146,10 +198,9 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-leave-2}
     \end{figure}
 
+    The figure \ref{fig:use-case-leave-2} depicts the use case diagram for the College Faculty Attendance Checker and Compensation and Benefits Officer within the HRIS LEAVESYS Module. Both actors share the same access which is limited to view-only access to all use cases found within the LEAVESYS module. This includes Viewing Leave Applications, which extends to viewing leave reasons; and Viewing Leave Credits. Both of the actors are only limited to viewing the Generated Leave Application with Credits Report. This structure ensures that the College Faculty Attendance Checker and Compensation and Benefits Officer have the necessary access to view leave applications, credits, and reports, facilitating efficient leave management and processing.
 
 
-    
-    
     \subsection{Entity Relational Diagram}
     
     The Entity Relational Diagram (ERD) will be used to visually represent the database structure that defines the relationships between different entities in the system and how they are related to one another through cardinalities and relationships. In the case of the HRIS application, MIS has provided ready access to the database scheme in preparation for the migration process. This ERD represents the various entities such as employees, departments, positions, and their relationships with each other. 
