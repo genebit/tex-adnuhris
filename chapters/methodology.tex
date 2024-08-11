@@ -17,7 +17,7 @@ The implementation of RAD provides a substantial advantage in developing the HRI
 \section{System Analysis}
 The system analysis phase of the HRIS application development involves utilizing various methods to understand and define the system's functional and data requirements. These include information gathering, analytical methods, personnel consultation assessments, and content analysis. These methods aid in identifying user needs, defining system functionalities, and establishing the database schema. 
 
-Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
+Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
 
     \subsection{Swim-lane Diagram}
     The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University faculty employee, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
@@ -31,7 +31,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:swimlane-admins}
     \end{figure}
 
-    Each roles area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. Higher admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
+    Each role area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. Higher admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
 
     Besides this, these admins can also generate different kinds of reports within the system e.g., performing data extraction, queries, employee performance evaluation, COE reports, contracts/appointment generation, etc.
 
@@ -42,11 +42,11 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:swimlane-sys-mgt}
     \end{figure}
 
-    The system also includes modules for TIMESYS, FACSYS, and LEAVESYS. These modules are designed to manage employee attendance, faculty attendance, and employee leave applications, respectively. In the diagram, the identified roles along with their privilege are assigned to manage the three (3) SYS as well as allowing them to generate reports. Meanwhile, the Student Assistant Attendance Checker have lesser privilege and is assigned only to managing faculty attendance, faculty schedule, and managing pending faculty schedules.
+    The system also includes modules for TIMESYS, FACSYS, and LEAVESYS. These modules are designed to manage employee attendance, faculty attendance, and employee leave applications, respectively. In the diagram, the identified roles along with their privilege are assigned to manage the three (3) SYS as well as allowing them to generate reports. Meanwhile, the Student Assistant Attendance Checker has lesser privilege and is assigned only to managing faculty attendance, faculty schedule, and managing pending faculty schedules.
 
     \subsection{Use Case Diagram}
     
-    The use case diagram serves as a visual representation of the functional requirements of the system from an external user's perspective. It illustrates the interactions between users and the system, showcasing the various use cases and how they relate to each other. Each module referred in \ref*{tab:hris-basic-modules}, \ref*{tab:hris-facsys-modules}, \ref*{tab:hris-leavesys-modules}, \ref*{tab:hris-timesys-modules} has specific use cases that define the functionalities and interactions within the system. Moreover, each module has different actors with specific roles and access levels, allowing for a comprehensive overview of the system's behavior and user interactions.
+    The use case diagram serves as a visual representation of the functional requirements of the system from an external user's perspective. It illustrates the interactions between users and the system, showcasing the various use cases and how they relate to each other. Each module referred to in \ref*{tab:hris-basic-modules}, \ref*{tab:hris-facsys-modules}, \ref*{tab:hris-leavesys-modules}, \ref*{tab:hris-timesys-modules} has specific use cases that define the functionalities and interactions within the system. Moreover, each module has different actors with specific roles and access levels, allowing for a comprehensive overview of the system's behavior and user interactions.
     
     Additionally, the concept of 'Manage' refers to the access users have to create, view, edit, and archive data or information within specific modules, By mapping out these interactions and incorporating both 'Manage' and 'View' functionalities, the use case diagram helps in identifying the system's behavior and the roles of different users in the HRIS application.
 
@@ -59,7 +59,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-1}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-1} shows the use case diagram for the System Admin within the HRIS Basic Modules. The System Admin has a full managing access to all use cases. This includes Performing Data Extraction, Managing Performance Evaluation and all the modules that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. This comprehensive access enables the System Admin to oversee and manage all aspects of the HRIS application, ensuring efficient and effective HR operations.
+    The figure \ref{fig:use-case-basic-1} shows the use case diagram for the System Admin within the HRIS Basic Modules. The System Admin has full managing access to all use cases. This includes Performing Data Extraction, Managing Performance Evaluation and all the modules that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. This comprehensive access enables the System Admin to oversee and manage all aspects of the HRIS application, ensuring efficient and effective HR operations.
 
     \begin{figure}[H]
         \centering
@@ -113,7 +113,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-7}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-7} illustrates the use case diagram for Capability Building Officer. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. Moreover, the Capability Building Officer has the privilege to Manage the Performance Evaluation of the employees.
+    The figure \ref{fig:use-case-basic-7} illustrates the use case diagram for the Capability Building Officer. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. Moreover, the Capability Building Officer has the privilege to Manage the Performance Evaluation of the employees.
 
     \begin{figure}[H]
         \centering
@@ -122,7 +122,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-basic-8}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-8} illustrates the use case diagram for Recruitment Officer. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that,  in the Employee Information Access functional area, the Recruitment Officer has a distinct privilege which is to view, create, and update the personal information of the employees.
+    The figure \ref{fig:use-case-basic-8} illustrates the use case diagram for Recruitment Officers. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that,  in the Employee Information Access functional area, the Recruitment Officer has a distinct privilege which is to view, create, and update the personal information of the employees.
 
 
     This section presents the use case diagram for the HRIS TIMESYS Module. The module involves four primary actors: System Admin, Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer. Each actor has specific access to various use cases within the TIMESYS module, enabling them to perform functions related to employee attendance monitoring and management.
@@ -138,16 +138,16 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-time-1}
     \end{figure}
 
-    The figure \ref{fig:use-case-time-1} demonstrates the use case diagram for the HRIS TIMESYS Module. The diagram shows the use cases for the System Admin and Attendance Monitoring Staff. Both of the actors has full managing access to all use cases found within the TIMESYS module. This comprehensive access enables the System Admin and Attendance Monitoring Staff to oversee and manage all aspects of the TIMESYS module, ensuring efficient and effective attendance monitoring and management.
+    The figure \ref{fig:use-case-time-1} demonstrates the use case diagram for the HRIS TIMESYS Module. The diagram shows the use cases for the System Admin and Attendance Monitoring Staff. Both of the actors have full managing access to all use cases found within the TIMESYS module. This comprehensive access enables the System Admin and Attendance Monitoring Staff to oversee and manage all aspects of the TIMESYS module, ensuring efficient and effective attendance monitoring and management.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-time-2.png}
-        \caption{HRIS TIMESYS Module: College Faculty Attedance Checker and Compensation and Benefits Officer.}
+        \caption{HRIS TIMESYS Module: College Faculty Attendance Checker and Compensation and Benefits Officer.}
         \label{fig:use-case-time-2}
     \end{figure}
 
-    The figure \ref{fig:use-case-time-2} depicts the use case diagram for the HRIS TIMESYS Module. The diagram illustrates the use cases for the College Faculty Attendance Checker and Compensation and Benefits Officer. Both actors shares the same access which is limited to view-only access to all use cases found within the TIMESYS module. 
+    The figure \ref{fig:use-case-time-2} depicts the use case diagram for the HRIS TIMESYS Module. The diagram illustrates the use cases for the College Faculty Attendance Checker and Compensation and Benefits Officer. Both actors share the same access which is limited to view-only access to all use cases found within the TIMESYS module. 
 
 
     In this section, it presents the use case diagrams for the HRIS FACSYS Module. The module involves five primary actors: System Admin, Attendance Monitoring Staff, College Faculty Attendance Checker, Compensation and Benefits Officer, and Student Assistant Attendance Checker. Each actor has specific access to various use cases within the FACSYS module, enabling them to perform functions related to faculty attendance monitoring and management. The FACSYS module consists of three primary use cases: Managing Faculty Attendance, which extends to the generation of faculty attendance reports; Managing Faculty Schedule, which includes handling pending faculty schedules; and Managing Required Class Hours. This structure ensures comprehensive coverage of all faculty attendance-related aspects of employee management.
@@ -159,7 +159,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         \label{fig:use-case-fac-1}
     \end{figure}
 
-    The figure \ref{fig:use-case-fac-1} illustrates the use case diagram the System Admin, Attendance Monitoring Staff, and College Faculty Attendance Checker within the HRIS FACSYS Module. These three actors shares the same full managing access to all use cases found within the FACSYS module. This comprehensive access enables the System Admin, Attendance Monitoring Staff, and College Faculty Attendance Checker to oversee and manage all aspects of the FACSYS module, ensuring efficient and effective faculty attendance monitoring and management.
+    The figure \ref{fig:use-case-fac-1} illustrates the use case diagram of the System Admin, Attendance Monitoring Staff, and College Faculty Attendance Checker within the HRIS FACSYS Module. These three actors share the same full managing access to all use cases found within the FACSYS module. This comprehensive access enables the System Admin, Attendance Monitoring Staff, and College Faculty Attendance Checker to oversee and manage all aspects of the FACSYS module, ensuring efficient and effective faculty attendance monitoring and management.
 
     \begin{figure}[H]
         \centering
@@ -194,7 +194,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/use-case-leave-2.png}
-        \caption{HRIS LEAVESYS Module: College Faculty Attedance Checker and Compensation and Benefits Officer.}
+        \caption{HRIS LEAVESYS Module: College Faculty Attendance Checker and Compensation and Benefits Officer.}
         \label{fig:use-case-leave-2}
     \end{figure}
 
@@ -308,7 +308,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
     The data migration strategy will involve the following key steps:
     
         \subsubsection{Assessment and Planning}
-            This phase invovles identifying the key stakeholders, analyzing the current HRIS that being utilized, gathering requirement for the new system. Having a proper assessment and planning are crucial in understanding the scope of the migration, identifying potential risks, and setting clear objectives. This phase ensures that all stakeholders are aligned and that the migration plan addresses all necessary aspects of the project. Also, effective planning will help mitigate risks and lays a solid foundation for the migration process.
+            This phase involves identifying the key stakeholders, analyzing the current HRIS that being utilized, gathering requirement for the new system. Having a proper assessment and planning are crucial in understanding the scope of the migration, identifying potential risks, and setting clear objectives. This phase ensures that all stakeholders are aligned and that the migration plan addresses all necessary aspects of the project. Also, effective planning will help mitigate risks and lays a solid foundation for the migration process.
 
         \subsubsection{Data Mapping and Cleansing}
             In this phase, it includes aligning the data fields from the legacy system to the new HRIS and correcting data quality issues. To ensure that all important data is correctly transferred to the new system, having an proper or accurate data mapping is needed. This phase also includes data cleansing as it is essential for maintaining data integrity and ensuring that the new system operates with accurate and reliable data. This step is critical for preventing data-related issues post-migration and ensuring a smooth transition.
@@ -318,7 +318,7 @@ Through the use of visual tools like use Swim-lane Diagram, Use case Diagrams, E
         
     \subsection{Execution Phase}
         \subsubsection{Pilot Migration}
-            Conducting a pilot migration involves setting up a test environment and performing a trial run with a subset of data. A pilot migration helps identify potential issues and validate the migration process before the full migration. Also, with this step it helpful for minimizing risks and ensuring a smooth transition. It allows for adjustments to be made based on the findings from the pilot, thereby improving the overall migration strategy
+            Conducting a pilot migration involves setting up a test environment and performing a trial run with a subset of data. A pilot migration helps identify potential issues and validate the migration process before the full migration. Also, with this step it will be helpful for minimizing risks and ensuring a smooth transition. It allows for adjustments to be made based on the findings from the pilot, thereby improving the overall migration strategy
 
         \subsubsection{Full Migration}
             In this full migration, it involves extracting, transforming, and loading the full dataset into the new system. Proper execution ensures that all data is accurately transferred and that the new system is ready for use. Validation and reconciliation are essential to confirm data integrity and completeness. This step is the core of the project and requires meticulous planning and execution to ensure success
@@ -440,7 +440,7 @@ This section contains some of the high-level tasks and considerations that will 
     
 \section{System Snapshots}
 
-In this section, contains some of the few initial screen mock-ups for redesigning among the major services of the previous HR system. This includes samples high-fidelity wire frame made in Figma. This allows for better visualization to the expected output for the new ADNU HRIS.
+This section contains some of the few initial screen mock-ups for redesigning among the major services of the previous HR system. This includes samples of high-fidelity wireframe made in Figma. This allows for better visualization to the expected output for the new ADNU HRIS.
 
     \begin{figure}[H]
         \centering
