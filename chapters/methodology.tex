@@ -209,18 +209,67 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-hris.png}
-        \caption{HRIS Core ERD Model.}
-        \label{fig:erd-hris}
+        \includegraphics[width=1\linewidth]{figures/images/erd-core-coe.png}
+        \caption{HRIS Core: Certificate of Employment ERD Model.}
+        \label{fig:erd-core-coe}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-core-office.png}
+        \caption{HRIS Core: Designation ERD Model.}
+        \label{fig:erd-core-office}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-core-trainings.png}
+        \caption{HRIS Core: Trainings ERD Model.}
+        \label{fig:erd-core-trainings}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-core-emp-personal-info.png}
+        \caption{HRIS Core: Employee Persinak Information ERD Model.}
+        \label{fig:erd-core-emp-personal-info}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-core-rank.png}
+        \caption{HRIS Core: Employee Rank ERD Model.}
+        \label{fig:erd-core-rank}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-core-faculty-performance.png}
+        \caption{HRIS Core: Faculty Performance ERD Model.}
+        \label{fig:erd-core-faculty-performance}
     \end{figure}
 
     This segment of the ERD model \ref*{fig:erd-hris} represents the core of HRIS, focusing on Employee Data Management. It includes tables such as EMPLOYMENT\_STATUS, JOB, OFFICE\_TYPE, OFFICE\_UNIT, and OFFICE\_SECTOR to categorize employment statuses, job details, and office structures. Additionally, it features a multi-tiered employee ranking system with tables like RANK\_TYPE, RANK\_REGION, RANK\_LEVEL, RANK, and RANK\_CATEGORY. The ASSIGNMENT\_TYPE and DESIGNATION\_TYPE tables manage assignments and designations, while the SECTOR entity represents different organizational sectors. This comprehensive structure ensures systematic organization and efficient management of HR-related data.
     
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-timesys.png}
-        \caption{HRIS TIMESYS ERD Model.}
-        \label{fig:erd-timesys}
+        \includegraphics[width=1\linewidth]{figures/images/erd-timesys-work-schedule-scheme-and-assignment.png}
+        \caption{HRIS TIMESYS: Work Schedule and Assignment ERD Model.}
+        \label{fig:erd-timesys-work-schedule-scheme-and-assignment}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-timesys-employee-attendance.png}
+        \caption{HRIS TIMESYS: Employee Attendance ERD Model.}
+        \label{fig:erd-timesys-employee-attendance}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-timesys-holiday.png}
+        \caption{HRIS TIMESYS: Holiday ERD Model.}
+        \label{fig:erd-timesys-holiday}
     \end{figure}
 
     In this part of the ERD model, it depicts the HRIS TIMESYS, monitoring and recording staff attendance. The system allows for the creation and assignment of various work schedules linked to different schemes and designations. 
@@ -229,22 +278,29 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-leavesys.png}
+        \includegraphics[width=1\linewidth]{figures/images/erd-leavesys-employee-leave.png}
         \caption{HRIS LEAVESYS ERD Model.}
-        \label{fig:erd-leavesys}
+        \label{fig:erd-leavesys-employee-leave}
     \end{figure}
 
     This section of ERD model depicts a comprehensive HRIS LEAVESYS designed to handle employee leave applications and processing. The diagram centers around the LEAVE\_APPLICATION entity, which connects to various supporting entities such as LEAVE\_TYPE, LEAVE\_CLASSIFICATION, LEAVE\_DURATION, and LEAVE\_VALIDITY. It shows how employee data from UIIS.EMPLOYEE links to leave applications, and how the system manages different types of leave, their classifications, durations, and associated credits. The ERD captures the full lifecycle of a leave request, including submission, endorsement, approval, clearance, and potential cancellation or disapproval. It also incorporates features for tracking leave credits, validity periods, and specific details of each leave application, providing a robust framework for efficient and detailed leave management in an organization.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{figures/images/erd-facsys.png}
+        \includegraphics[width=1\linewidth]{figures/images/erd-facsys-faculty-attendance.png}
         \caption{HRIS FACSYS ERD Model.}
         \begin{description}
             \item[] This segment of the ERD model illustrates the HRIS FACSYS module, which focuses on monitoring and recording faculty attendance. It centers around the FACULTY\_ATTENDANCE entity, which records detailed attendance information, including date, time, day, and associated course offerings for each employee. The system links to a separate UIIS.EMPLOYEE entity, containing broader employee data. It incorporates two supporting entities: ATTENDANCE\_STATUS for categorizing attendance and ATTENDANCE\_REMARK for additional notes. This structure allows for comprehensive tracking of faculty attendance, supporting multiple class offerings per employee and providing flexibility in recording attendance statuses and remarks. The design enables efficient record-keeping and could facilitate various attendance-related analyses and reports.
             \item[] This ERD has been reviewed and approved by the MIS DBA with a signed proof of acknowledgement in figure \ref*{fig:proof-ack-erd-consultation} during consultation for this ERD. 
         \end{description}
-        \label{fig:erd-facsys}
+        \label{fig:erd-facsys-faculty-attendance}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/erd-trails.png}
+        \caption{HRIS Trails ERD Model.}
+        \label{fig:erd-trails}
     \end{figure}
     
     \subsection{Gantt Chart}
