@@ -211,7 +211,10 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
         \centering
         \includegraphics[width=1\linewidth]{figures/images/erd-core-coe.png}
         \caption{HRIS Core: Certificate of Employment ERD Model.}
-        \label{fig:erd-core-coe}
+        \label{fig:erd-core-coe} 
+        \begin{description}
+            \item[]This segment of the ERD model illustrates the Certificate of Employment (COE) module within the Human Resource Information System. The system is designed to efficiently manage and generate Certificates of Employment, incorporating various relevant factors for comprehensive employee documentation. Central to this module is the \texttt{coe} entity, which is intricately connected to several other key entities. It links to \texttt{uiis.employee} for essential employee data, ensuring accurate personal information. The system also incorporates \texttt{prof\_title} for the employee's professional designation, \texttt{coe\_status} to track the current status of each certificate, \texttt{office\_unit} to associate the employee with their specific department, \texttt{designation} to capture the official job title, \texttt{rank} to include information about the employee's hierarchical position, and \texttt{employee\_status} to indicate their current employment arrangement. This structure enables the system to generate comprehensive and accurate Certificates of Employment, pulling relevant information from interconnected entities.
+        \end{description}
     \end{figure}
 
     \begin{figure}[H]
@@ -219,6 +222,9 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
         \includegraphics[width=1\linewidth]{figures/images/erd-core-office.png}
         \caption{HRIS Core: Designation ERD Model.}
         \label{fig:erd-core-office}
+        \begin{description}
+            \item[] The illutstration shows the ERD model for the designation module which is designed to manage the complex organizational structure and employee positions within the institution. The central \texttt{designation} entity is linked to several other entities, providing a comprehensive view of each employee's position and organizational context. It connects to \texttt{uiis.employee} for individual employee data, \texttt{office\_unit} for departmental information, and \texttt{job} for specific job titles. The system incorporates \texttt{employment\_status} to track the nature of employment (e.g., full-time, part-time), \texttt{assignment\_type} for the kind of role assignment, and \texttt{designation\_type} for categorizing positions. The \texttt{designation\_type} entity further links to \texttt{sector}, allowing for broader organizational grouping. The \texttt{office\_unit} entity is part of a larger organizational structure, connecting to \texttt{office\_sector} and \texttt{office\_type} for detailed unit categorization. It also links to \texttt{office\_dissolved} (which is also connects to \texttt{dissolved\_type}), enabling the system to track historical changes in the organizational structure.
+        \end{description}
     \end{figure}
 
     \begin{figure}[H]
@@ -226,13 +232,19 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
         \includegraphics[width=1\linewidth]{figures/images/erd-core-trainings.png}
         \caption{HRIS Core: Trainings ERD Model.}
         \label{fig:erd-core-trainings}
+        \begin{description}
+            \item[] This part of the ERD model illustrates the Training module within the Human Resource Information System. The system is designed to comprehensively track and manage employee training activities. The central entity is \texttt{training}, which captures essential details such as training title, date range, venue, and remarks. It's connected to \texttt{training\_category} and \texttt{training\_level}, allowing for classification of training types and levels of complexity or importance. The \texttt{training\_attended} entity serves as a connection between individual employees \texttt{uiis.employee} and specific training sessions, also incorporating the \texttt{role} of the employee in each training. This structure enables detailed recording of each employee's training history, including their role in each session.
+        \end{description}
     \end{figure}
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/erd-core-emp-personal-info.png}
-        \caption{HRIS Core: Employee Persinak Information ERD Model.}
+        \caption{HRIS Core: Employee Personal Information ERD Model.}
         \label{fig:erd-core-emp-personal-info}
+        \begin{description}
+            \item[] This segment of the Human Resource Information System is designed to manage comprehensive personal and professional information for each employee. The system revolves around the \texttt{uiis.employee} entity, which serves as the central point connecting various aspects of an employee's profile. The \texttt{employee\_credential} entity stores essential identification and access information, directly linked to the employee record. Health-related information is captured in the \texttt{health\_record} entity, ensuring that important medical id is securely associated with each employee. The \texttt{academic} entity tracks educational background, connecting not only to the employee but also to \texttt{school}, \texttt{uiis.educ\_level}, and \texttt{degree} entities, allowing for a detailed educational history. Academic achievements are recorded in the \texttt{acad\_awards} entity, linked to both the employee and their academic records. Professional qualifications are managed through the \texttt{acad\_prof\_license} entity, which connects employees to their professional licenses. This structure enables a holistic view of each employee's personal, educational, and professional qualifications, supporting various HR functions such as career development, compliance, and employee wellness initiatives.
+        \end{description}
     \end{figure}
 
     \begin{figure}[H]
@@ -240,6 +252,9 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
         \includegraphics[width=1\linewidth]{figures/images/erd-core-rank.png}
         \caption{HRIS Core: Employee Rank ERD Model.}
         \label{fig:erd-core-rank}
+        \begin{description}
+            \item[] The Rank module in this HRIS is designed to manage the hierarchical structure of employee positions within the organization. The central \texttt{rank\_record} entity is directly linked to \texttt{uiis.employee}, associating each employee with their current rank. This entity also connects to the \texttt{rank} entity, which provides details about specific ranks. The \texttt{rank} entity is further linked to \texttt{rank\_level}, allowing for a tiered structure of ranks. \texttt{rank\_level}, then, is associated with \texttt{rank\_type}, which categorizes different types of ranks. The \texttt{rank\_type} entity is connected to both \texttt{rank\_category} and \texttt{active\_status}, enabling the system to classify ranks into broader categories and track their current status. This hierarchical structure allows for detailed management of employee rankings, supports career progression tracking, and can facilitate reporting on organizational structure and employee distribution across different rank levels and categories.
+        \end{description}
     \end{figure}
 
     \begin{figure}[H]
@@ -247,15 +262,20 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
         \includegraphics[width=1\linewidth]{figures/images/erd-core-faculty-performance.png}
         \caption{HRIS Core: Faculty Performance ERD Model.}
         \label{fig:erd-core-faculty-performance}
+        \begin{description}
+            \item[] This module is designed to track and evaluate faculty performance. The \texttt{performance} entity is at the core, linked to \texttt{uiis.employee} for both the evaluated employee and the rater, \texttt{semester} for time-based tracking, \texttt{rating\_factor} for evaluation criteria, and \texttt{office\_unit} for departmental context. The \texttt{faculty\_performance} entity extends this, specifically for faculty members, connecting to \texttt{uiis.employee, performance, semester, and office\_sector}, allowing for sector-wide performance analysis. The evaluation process is further refined through the \texttt{evaluation\_weight} entity, which links to both \texttt{semester and weight\_option}, enabling customized evaluation criteria for different periods. The \texttt{weight\_option} entity, consequently, connects to the \texttt{option} entity, providing flexibility in defining evaluation options. This structure supports a robust performance evaluation system, allowing for detailed, time-based performance tracking, customizable evaluation criteria, and the ability to analyze performance across different organizational levels. It can facilitate data-driven decision-making in areas such as faculty development, promotion considerations, and overall academic quality improvement.
+        \end{description}
     \end{figure}
-
-    This segment of the ERD model \ref*{fig:erd-hris} represents the core of HRIS, focusing on Employee Data Management. It includes tables such as EMPLOYMENT\_STATUS, JOB, OFFICE\_TYPE, OFFICE\_UNIT, and OFFICE\_SECTOR to categorize employment statuses, job details, and office structures. Additionally, it features a multi-tiered employee ranking system with tables like RANK\_TYPE, RANK\_REGION, RANK\_LEVEL, RANK, and RANK\_CATEGORY. The ASSIGNMENT\_TYPE and DESIGNATION\_TYPE tables manage assignments and designations, while the SECTOR entity represents different organizational sectors. This comprehensive structure ensures systematic organization and efficient management of HR-related data.
     
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/erd-timesys-work-schedule-scheme-and-assignment.png}
         \caption{HRIS TIMESYS: Work Schedule and Assignment ERD Model.}
         \label{fig:erd-timesys-work-schedule-scheme-and-assignment}
+        \begin{description}
+            \item[]
+            % insert description here
+        \end{description}
     \end{figure}
 
     \begin{figure}[H]
@@ -263,6 +283,10 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
         \includegraphics[width=1\linewidth]{figures/images/erd-timesys-employee-attendance.png}
         \caption{HRIS TIMESYS: Employee Attendance ERD Model.}
         \label{fig:erd-timesys-employee-attendance}
+        \begin{description}
+            \item[]
+            % insert description here
+        \end{description}
     \end{figure}
 
     \begin{figure}[H]
@@ -270,20 +294,28 @@ Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entit
         \includegraphics[width=1\linewidth]{figures/images/erd-timesys-holiday.png}
         \caption{HRIS TIMESYS: Holiday ERD Model.}
         \label{fig:erd-timesys-holiday}
+        \begin{description}
+            \item[]
+            % insert description here
+        \end{description}
     \end{figure}
 
-    In this part of the ERD model, it depicts the HRIS TIMESYS, monitoring and recording staff attendance. The system allows for the creation and assignment of various work schedules linked to different schemes and designations. 
+    % In this part of the ERD model, it depicts the HRIS TIMESYS, monitoring and recording staff attendance. The system allows for the creation and assignment of various work schedules linked to different schemes and designations. 
 
-    The WORK\_SCHEDULE table captures detailed timing information for each day, crucial for tracking regular attendance. Also, the HOLIDAY table plays a vital role in attendance monitoring by defining non-working days that should not be counted as absences. This distinction is essential for accurate attendance records. The WORK\_SCHEDULE\_DESIGNATION table, with its effectivity dates, enables tracking of schedule changes over time. This structure facilitates flexible management of work schedules while ensuring precise attendance monitoring that correctly accounts for holidays and regular working days across different roles and time periods.
+    % The WORK\_SCHEDULE table captures detailed timing information for each day, crucial for tracking regular attendance. Also, the HOLIDAY table plays a vital role in attendance monitoring by defining non-working days that should not be counted as absences. This distinction is essential for accurate attendance records. The WORK\_SCHEDULE\_DESIGNATION table, with its effectivity dates, enables tracking of schedule changes over time. This structure facilitates flexible management of work schedules while ensuring precise attendance monitoring that correctly accounts for holidays and regular working days across different roles and time periods.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/erd-leavesys-employee-leave.png}
         \caption{HRIS LEAVESYS ERD Model.}
         \label{fig:erd-leavesys-employee-leave}
+        \begin{description}
+            \item[]
+            % insert description here
+        \end{description}
     \end{figure}
 
-    This section of ERD model depicts a comprehensive HRIS LEAVESYS designed to handle employee leave applications and processing. The diagram centers around the LEAVE\_APPLICATION entity, which connects to various supporting entities such as LEAVE\_TYPE, LEAVE\_CLASSIFICATION, LEAVE\_DURATION, and LEAVE\_VALIDITY. It shows how employee data from UIIS.EMPLOYEE links to leave applications, and how the system manages different types of leave, their classifications, durations, and associated credits. The ERD captures the full lifecycle of a leave request, including submission, endorsement, approval, clearance, and potential cancellation or disapproval. It also incorporates features for tracking leave credits, validity periods, and specific details of each leave application, providing a robust framework for efficient and detailed leave management in an organization.
+    % This section of ERD model depicts a comprehensive HRIS LEAVESYS designed to handle employee leave applications and processing. The diagram centers around the LEAVE\_APPLICATION entity, which connects to various supporting entities such as LEAVE\_TYPE, LEAVE\_CLASSIFICATION, LEAVE\_DURATION, and LEAVE\_VALIDITY. It shows how employee data from UIIS.EMPLOYEE links to leave applications, and how the system manages different types of leave, their classifications, durations, and associated credits. The ERD captures the full lifecycle of a leave request, including submission, endorsement, approval, clearance, and potential cancellation or disapproval. It also incorporates features for tracking leave credits, validity periods, and specific details of each leave application, providing a robust framework for efficient and detailed leave management in an organization.
 
     \begin{figure}[H]
         \centering
