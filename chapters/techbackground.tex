@@ -2,22 +2,22 @@
 \chapter{Technical Framework} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-One of the critical components in understanding and developing any system is establishing a firm theoretical framework. This chapter will delve into the foundational concepts and technologies that form the infrastructure of the HRMO system. By outlining the project code infrastructure, front-end and back-end technologies, and the database environment, the researchers aim to provide a comprehensive overview of the system's architecture and the rationale behind the technological choices. 
+One of the critical components in understanding and developing any system is establishing a firm technical framework. This chapter will delve into the foundational concepts and technologies that forms the infrastructure of the new HRIS system. By outlining the project code infrastructure, front-end and back-end technologies, and the database environment, the researchers aim to provide a comprehensive overview of the system's architecture and the rationale behind the technological choices. 
 
 \section{Project Code Infrastructure}
 
-    The web application utilizes Laravel by Taylor Otwell as the main full-stack web application framework. Laravel, by default, follows a Model-View-Controller (MVC) architectural pattern \cite{medium12023}. A common project structure when creating complex and dynamic web systems. 
+    The web application utilizes Laravel 10 as the main full-stack web application framework. Laravel, by default, follows a Model-View-Controller (MVC) architectural pattern \cite{medium12023}. A common project structure when creating complex and dynamic web systems. 
     
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{figures/images/doc/mvc.png}
-        \caption{How the MVC Architecture Works.}
+        \includegraphics[width=0.75\linewidth]{figures/images/doc/architecture.png}
+        \caption{Layered Repository Pattern with Livewire.}
         \label{fig:enter-label}
     \end{figure}
     
-    With this architecture, the process is streamlined and optimized by following the Single-Responsibility Principle (SRP) rule in programming. Wherein, the \textit{View} contains the web front-end web design/experience and logic for sending client requests to the server. For every request the client makes, is handled within the \textit{Controller}. Within this layer, it handles the logic for communicating within client-to-server requests and responses. Within this layer, will handle exceptions, validations, Data Access Objects (DAO), APIs, and many more \cite{mdn12023}.
+    Throughout the developement, the project utilized Laravel's MVC pattern while incorporating livewire and repository pattern to the code architecture. With this architecture, the process is streamlined and optimized by following the Single-Responsibility Principle (SRP) rule in programming.  Maintaining a clean and minimal code for the controllers, the repository pattern is utilized to handle the data access logic. This pattern allows for a more organized and structured codebase, making it easier to maintain and scale the application. For the components, Livewire is used to handle the front-end logic and data binding. This will allow for the page to be more interactive and optimized for user experience because of its real-time data binding capabilities. Livewire component requests are then sent to the repository contracts to handle the data access logic which are then implemented by the repository classes. These classes are responsible for interacting with the database and returning the data to the Livewire components. 
     
-    For every \textit{Controller} request to the Database, the \textit{Model} layer is responsible for interacting with the database. The \textit{Model} encapsulates the data and logic necessary for business operations, ensuring a clean separation of concerns. This architecture allows each component to focus on its specific responsibility, leading to a more maintainable and scalable system \cite{mdn12023} \cite{wikipedia12024}. 
+    For every \textit{Repository} request to the Database, the \textit{Model} layer is responsible for interacting with the database. The \textit{Model} encapsulates the data and logic necessary for business operations, ensuring a clean separation of concerns. This architecture allows each component to focus on its specific responsibility, leading to a more maintainable and scalable system \cite{mdn12023} \cite{wikipedia12024}. 
 
 \section{Development Tools and Technologies}
 
