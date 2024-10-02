@@ -17,10 +17,23 @@ The implementation of RAD provides a substantial advantage in developing the HRI
 \section{System Analysis}
 The system analysis phase of the HRIS application development involves utilizing various methods to understand and define the system's functional and data requirements. These include information gathering, analytical methods, personnel consultation assessments, and content analysis. These methods aid in identifying user needs, defining system functionalities, and establishing the database schema. 
 
-Through the use of visual tools like Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
+Through the use of visual tools i.e., Swim-lane Diagram, Use case Diagrams, Entity Relational Diagrams, and Gantt charts, the system analysis phase enables a comprehensive understanding of the HRIS application's scope and requirements. By employing a systematic approach to system analysis, the development team can ensure that the HRIS application is designed and implemented in alignment with the project objectives and user expectations.
+
+\subsection{Organizational Structure}
+
+The ADNU HRMO currently maintains an organizational structure, with each role clearly defined to ensure efficient management and operation of the HRIS. Each role has specific responsibilities and access levels within the HRIS, ensuring that the system operates smoothly and effectively.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/images/doc/organizational-structure.png}
+    \caption{HRIS Organizational Structure.}
+    \label{fig:organizational-struct}
+\end{figure}
+
+With this organizational structure in place, the new system will be designed to accommodate the roles and responsibilities of each HR staff member present in the structure figure \ref*{fig:organizational-struct}. 
 
     \subsection{Swim-lane Diagram}
-    The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University faculty employee, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
+    The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University personnel, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
 
     The identified roles i.e., Director, Sys. Admin, Attendance Monitoring and Checker, Training \& Dev. Specialist, Records Mgt. Specialist, Comp. \& Benefits Officer, ISS Officer, Recruitment \& Admin Staff, and Capability Bldg. Officer, are assigned specific tasks and responsibilities within the system. These responsibilities and privileges are outlined in table \ref*{tab:hris-basic-modules}. 
 
@@ -517,7 +530,9 @@ This section contains some of the few initial screen mock-ups for redesigning am
         \label{fig:app-login}
     \end{figure}
 
-    The new design displays the redesigned login page. It features a clean, modern interface with input fields for username and password, as well as a prominent login button. The design emphasizes user-friendliness and security for accessing the HRIS platform. Within this page, users can input their University account credentials or login through the use of their GBOX account.
+    The new HRIS shall include an authentication module to handle HR managers i.e., Director, Administrative Assistant, Capability Building Officer, Compensation \& Benefits Officer, Information Support Systems Officer, Consultant, Recruitment Staff, Training \& Development Specialist, Benefits and Wellness Specialist, Attendance Monitoring Staff, College
+    
+    Within this page, users can input their University account credentials or login through the use of their GBOX account.
 
     \begin{figure}[H]
         \centering
