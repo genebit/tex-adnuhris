@@ -223,16 +223,16 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-core-coe.png}
-        \caption{HRIS Core - Certificate of Employment ERD Model.}
-        \label{fig:erd-core-coe} 
+        \caption{ER Diagram for Certificate of Employment Module.}
+        \label{fig:erd-core-coe}
     \end{figure}
 
-    This segment of the ERD model illustrates the Certificate of Employment (COE) module within the Human Resource Information System. The system is designed to efficiently manage and generate Certificates of Employment, incorporating various relevant factors for comprehensive employee documentation. Central to this module is the \texttt{hr.coe} entity, which is intricately connected to several other key entities. It links to \texttt{uiis.employee} for essential employee data, ensuring accurate personal information. The system also incorporates \texttt{hr.prof\_title} for the employee's professional designation, \texttt{hr.coe\_status} to track the current status of each certificate, \texttt{hr.office\_unit} to associate the employee with their specific department, \texttt{hr.designation} to capture the official job title, \texttt{hr.rank} to include information about the employee's hierarchical position, and \texttt{hr.employee\_status} to indicate their current employment arrangement. This structure enables the system to generate comprehensive and accurate Certificates of Employment, pulling relevant information from interconnected entities.
+    This segment of the ERD model captures the process for Certificate of Employment (COE) module. The system is designed to efficiently manage and generate Certificates of Employment, incorporating various relevant factors for comprehensive employee documentation. Central to this module is the \texttt{hr.coe} entity, which is intricately connected to several other key entities. It links to \texttt{uiis.employee} for essential employee data, ensuring accurate personal information. The system also incorporates \texttt{hr.prof\_title} for the employee's professional designation, \texttt{hr.coe\_status} to track the current status of each certificate, \texttt{hr.office\_unit} to associate the employee with their specific department, \texttt{hr.designation} to capture the official job title, \texttt{hr.rank} to include information about the employee's hierarchical position, and \texttt{hr.employee\_status} to indicate their current employment arrangement. This structure enables the system to generate comprehensive and accurate Certificates of Employment, pulling relevant information from interconnected entities.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-core-office.png}
-        \caption{HRIS Core - Designation ERD Model.}
+        \caption{ER Diagram for Designation and Assignments Module.}
         \label{fig:erd-core-office}
     \end{figure}
 
@@ -241,7 +241,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-core-trainings.png}
-        \caption{HRIS Core - Trainings ERD Model.}
+        \caption{ER Diagram for Trainings Module.}
         \label{fig:erd-core-trainings}
     \end{figure}
 
@@ -250,18 +250,18 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-core-emp-personal-info.png}
-        \caption{HRIS Core - Employee Personal Information ERD Model.}
+        \caption{ER Diagram for Employee Personal Information Module.}
         \label{fig:erd-core-emp-personal-info}
     \end{figure}
 
-    This segment of the Human Resource Information System is designed to manage comprehensive personal and professional information for each employee. The system revolves around the \texttt{uiis.employee} entity, which serves as the central point connecting various aspects of an employee's profile. The \texttt{hr.employee\_credential} entity stores essential identification and access information, directly linked to the employee record. Health-related information is captured in the \texttt{hr.health\_record} entity, ensuring that important medical id is securely associated with each employee. The \texttt{hr.academic} entity tracks educational background, connecting not only to the employee but also to \texttt{hr.school}, \texttt{uiis.educ\_level}, and \texttt{hr.degree} entities, allowing for a detailed educational history. 
+    This design captures the management of personal and professional information for each employee. The system revolves around the \texttt{uiis.employee} entity, which serves as the central point connecting various aspects of an employee's profile. The \texttt{hr.employee\_credential} entity stores essential identification and access information, directly linked to the employee record. Health-related information is captured in the \texttt{hr.health\_record} entity, ensuring that important medical id is securely associated with each employee. The \texttt{hr.academic} entity tracks educational background, connecting not only to the employee but also to \texttt{hr.school}, \texttt{uiis.educ\_level}, and \texttt{hr.degree} entities, allowing for a detailed educational history. 
             
     Academic achievements are recorded in the \texttt{hr.acad\_awards} entity, linked to both the employee and their academic records. Professional qualifications are managed through the \texttt{hr.acad\_prof\_license} entity, which connects employees to their professional licenses. This structure enables a holistic view of each employee's personal, educational, and professional qualifications, supporting various HR functions such as career development, compliance, and employee wellness initiatives.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-core-rank.png}
-        \caption{HRIS Core - Employee Rank ERD Model.}
+        \caption{ER Diagram for Faculty Ranks Module.}
         \label{fig:erd-core-rank}
     \end{figure}
 
@@ -272,7 +272,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-timesys-work-schedule-scheme-and-assignment.png}
-        \caption{HRIS TIMESYS - Work Schedule and Assignment ERD Model.}
+        \caption{ER Diagram for Work Schedule and Assignment Module.}
         \label{fig:erd-timesys-work-schedule-scheme-and-assignment}
     \end{figure}
 
@@ -281,7 +281,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-timesys-employee-attendance.png}
-        \caption{HRIS TIMESYS - Employee Attendance ERD Model.}
+        \caption{ER Diagram for  Employee Attendance Module.}
         \label{fig:erd-timesys-employee-attendance}
     \end{figure}
 
@@ -290,7 +290,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-timesys-holiday.png}
-        \caption{HRIS TIMESYS - Holiday ERD Model.}
+        \caption{ER Diagram for Holiday Module.}
         \label{fig:erd-timesys-holiday}
     \end{figure}
 
@@ -299,7 +299,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-leavesys-employee-leave.png}
-        \caption{HRIS LEAVESYS ERD Model.}
+        \caption{ER Diagram for Leave Management Module.}
         \label{fig:erd-leavesys-employee-leave}
     \end{figure}
 
@@ -310,7 +310,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-facsys-faculty-attendance.png}
-        \caption{HRIS FACSYS ERD Model.}
+        \caption{ER Diagram for Faculty Attendance Module.}
         \label{fig:erd-facsys-faculty-attendance}
     \end{figure}
 
@@ -319,7 +319,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-trails.png}
-        \caption{HRIS Trails ERD Model.}
+        \caption{ER Diagram for Recording Trails.}
         \label{fig:erd-trails}
     \end{figure}
 
@@ -336,7 +336,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/gantt/gantt-chart-1.png}
-        \caption{HRIS Gantt Chart Pre-planning Timeline.}
+        \caption{Project Gantt Chart - Pre-planning Timeline.}
         \label{fig:gantt-chart-1}
     \end{figure}
 
@@ -345,7 +345,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/gantt/gantt-chart-2.png}
-        \caption{HRIS Gantt Chart Modules Development Timeline.}
+        \caption{Project Gantt Chart - Modules Development Timeline.}
         \label{fig:gantt-chart-2}
     \end{figure}
 
@@ -354,7 +354,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/gantt/gantt-chart-3.png}
-        \caption{HRIS Gantt Migration to Deployment Timeline.}
+        \caption{Project Gantt Chart - Migration to Deployment Timeline.}
         \label{fig:gantt-chart-3}
     \end{figure}
 
@@ -363,7 +363,7 @@ With this organizational structure in place, the new system will be designed to 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/gantt/gantt-chart-4.png}
-        \caption{HRIS Gantt Post Development Timeline.}
+        \caption{Project Gantt Chart - Post Development Timeline.}
         \label{fig:gantt-chart-4}
     \end{figure}
 
@@ -465,8 +465,7 @@ This section contains some of the high-level tasks and considerations that will 
             
             \item Peripheral Devices
             \begin{enumerate}
-                \item \textbf{DTR Scanner:} The HR module TIMESYS will utilize the DTR Scanner for employee attendance purposes.
-                \item \textbf{RFID Scanner:} The RFID scanner will be utilized in support for the DTR within HR.
+                \item \textbf{DTR Scanner:} The HR module TIMESYS CHRONOS will utilize a device Card Scanner for employee attendance purposes.
             \end{enumerate}
             
         \end{enumerate}
@@ -555,7 +554,7 @@ This section contains some of the few initial screen mock-ups for redesigning am
     \begin{figure}[H]
         \centering
         \frame{\includegraphics[width=1\linewidth]{figures/app/pi-info.png}}
-        \caption{Viewing of Personal Information on Selected Employee.}
+        \caption{Viewing of Employee's Personal Information Details.}
         \label{fig:app-pi-info}
     \end{figure}
 
@@ -584,7 +583,7 @@ This section contains some of the few initial screen mock-ups for redesigning am
     \begin{figure}[H]
         \centering
         \frame{\includegraphics[width=1\linewidth]{figures/app/coe.png}}
-        \caption{Redesigned Certificate of Employment Page.}
+        \caption{Viewing of Certificate of Employment Details.}
         \label{fig:app-coe}
     \end{figure}
 
@@ -593,7 +592,7 @@ This section contains some of the few initial screen mock-ups for redesigning am
     \begin{figure}[H]
         \centering
         \frame{\includegraphics[width=1\linewidth]{figures/app/coe-info.png}}
-        \caption{New HRIS Certificate of Employment Processing Page.}
+        \caption{Redesigned Certificate of Employment Information Page.}
         \label{fig:app-coe-info}
     \end{figure}
 
@@ -624,7 +623,7 @@ This section contains some of the few initial screen mock-ups for redesigning am
         \label{fig:app-attendance-fac}
     \end{figure}
 
-    With this page displays the interface for managing faculty attendance. This is in connection with the FACSYS module. Records of faculty attendance are displayed in table view, and admins can manage attendance records, including the subject attended, day, remarks, and date of attendance.
+    Within this page displays the interface for managing faculty attendance. This is in connection with the FACSYS module. Records of faculty attendance are displayed in table view, and admins can manage attendance records, including the subject attended, day, remarks, and date of attendance.
 
     \begin{figure}[H]
         \centering
@@ -638,7 +637,7 @@ This section contains some of the few initial screen mock-ups for redesigning am
     \begin{figure}[H]
         \centering
         \frame{\includegraphics[width=1\linewidth]{figures/app/leave-awol.png}}
-        \caption{New HRIS Employee AWOL Page.}
+        \caption{Redesigned Employee AWOL Page.}
         \label{fig:leave-awol}
     \end{figure}
 
