@@ -268,7 +268,16 @@ The original HRMO organizational structure includes the Consultant which in the 
     The Rank module is designed to manage the hierarchical structure of employee positions within the organization. The central \texttt{hr.rank\_record} entity is directly linked to \texttt{uiis.employee}, associating each employee with their current rank. This entity also connects to the \texttt{hr.rank} entity, which provides details about specific ranks. The \texttt{rank} entity is further linked to \texttt{hr.rank\_level}, allowing for a tiered structure of ranks. \texttt{hr.rank\_level}, then, is associated with \texttt{hr.rank\_type}, which categorizes different types of ranks. The \texttt{hr.rank\_type} entity is connected to both \texttt{hr.rank\_category} and \texttt{hr.active\_status}, enabling the system to classify ranks into broader categories and track their current status. 
             
     This hierarchical structure allows for detailed management of employee rankings, supports career progression tracking, and can facilitate reporting on organizational structure and employee distribution across different rank levels and categories.
-    
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-core-gest.png}
+        \caption{ER Diagram for General Employment Status Tracker Module.}
+        \label{fig:erd-core-gest}
+    \end{figure}
+
+    This section of ERD shows the General Employment Status Tracker module, which is designed to record and manage the employment journey of each employee within the Ateneo de Naga University. The managing and tracking of employee's employment status is accomplished through linking \texttt{uiis.employee} and \texttt{hr.action\_type} to assign specific actions to each employee. In addition to this, the assigning of action also includes recording its effectivity date, reinstatement date, and reasons. Furthermore, the \texttt{hr.action\_type} provides categories for different actions taken of the employee, while the \texttt{hr.action\_category} entity further classifies these actions. With this structure, it enables the system to track and manage the employment status of each employee, ensuring accurate records of their employment history.
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-timesys-work-schedule-scheme-and-assignment.png}
