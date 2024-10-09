@@ -309,6 +309,15 @@ The original HRMO organizational structure includes the Consultant which in the 
 
     \begin{figure}[H]
         \centering
+        \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-leavesys-leave-credit-scheme.png}
+        \caption{ER Diagram for Leave Credits Scheme Assignment Module.}
+        \label{fig:erd-leavesys-leave-credit-scheme}
+    \end{figure}
+
+    The system shall also captures leave credit scheme management for HR users to assign leave credits to employees. Within the \texttt{hr.leave\_credit\_definition} contains the details of the leave credit scheme, including the type, and credit value. The \texttt{hr.leave\_credit\_assign} entity captures the assignment of leave credits to employees, including the effective date, and the scheme assigned.
+
+    \begin{figure}[H]
+        \centering
         \includegraphics[width=1\linewidth]{figures/images/diagrams/erd/erd-facsys-faculty-attendance.png}
         \caption{ER Diagram for Faculty Attendance Module.}
         \label{fig:erd-facsys-faculty-attendance}
