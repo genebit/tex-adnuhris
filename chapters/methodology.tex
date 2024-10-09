@@ -30,12 +30,12 @@ The ADNU HRMO currently maintains an organizational structure, with each role cl
     \label{fig:organizational-struct}
 \end{figure}
 
-With this organizational structure in place, the new system will be designed to accommodate the roles and responsibilities of each HR staff member present in the structure figure \ref*{fig:organizational-struct}. 
+The original HRMO organizational structure includes the Consultant which in the case of this application, the Consultant does not have any usage on the system, thus excluded. With this organizational structure in place, the new system will be designed to accommodate the roles and responsibilities of each HR staff member present in the structure figure \ref*{fig:organizational-struct}. 
 
     \subsection{Swim-lane Diagram}
-    The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University personnel, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges e.g., perform employee actions or tasks and HR overall general management.
+    The Swim-lane diagram illustrates the process flow of the HRIS. The process begins when the user enters their login credentials. These credentials are unique to each University personnel, distinguishing them from other users in the system. Each user has different privileges and assignments set initially to access the system. After entering the credentials, the system validates them, granting the user access to the system. Once the user successfully logs in, they are directed to the dashboard where they can perform different actions depending on their privileges.
 
-    The identified roles i.e., Director, Sys. Admin, Attendance Monitoring and Checker, Training \& Dev. Specialist, Records Mgt. Specialist, Comp. \& Benefits Officer, ISS Officer, Recruitment \& Admin Staff, and Capability Bldg. Officer, are assigned specific tasks and responsibilities within the system. These responsibilities and privileges are outlined in table \ref*{tab:hris-basic-modules}. 
+    The identified roles in figure \ref*{fig:organizational-struct}, are assigned specific tasks and responsibilities within the system. These responsibilities and privileges are outlined in table \ref*{tab:hris-basic-modules}. 
 
     \begin{figure}[H]
         \centering
@@ -44,7 +44,7 @@ With this organizational structure in place, the new system will be designed to 
         \label{fig:swimlane-admins}
     \end{figure}
 
-    Each role area can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. Higher admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
+    Each role can perform admin privileges and manage different modules within the system. For these actions, they are processed and managed under the system to provide a streamlined operation for any users in the system. Higher admins will have access to core modules e.g., Manage employee/personnel containing the employee contacts, personal information, profiles, assignments, assignment archive, faculty rank, academic, academic awards, professional license, training attendance, Certificate of Employment (COE), and health record.
 
     Besides this, these admins can also generate different kinds of reports within the system e.g., performing data extraction, queries, employee performance evaluation, COE reports, contracts/appointment generation, etc.
 
@@ -63,79 +63,79 @@ With this organizational structure in place, the new system will be designed to 
     
     Additionally, the concept of 'Manage' refers to the access users have to create, view, edit, and delete data or information within specific modules, By mapping out these interactions and incorporating both 'Manage' and 'View' functionalities, the use case diagram helps in identifying the system's behavior and the roles of different users in the HRIS application.
 
-    In the HRIS Basic Modules Use Case Diagram, alongside Performing Data Extraction and Managing/Viewing Performance Evaluation, the use cases are grouped into four primary functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. Each area extends to specific management or viewing capabilities. Employee Information Access covers personal data, profiles, health records, and professional licenses. Employment and Assignment Access encompasses employee assignments, their archives, and status information. Academic and Professional Development Access includes academic records, awards, and attended training sessions. Lastly, Certification and Reporting Access handles COE (Certificate of Employment) requests, reports, and contracts/appointments generation. This structure allows for efficient organization of various HRIS functions, providing comprehensive coverage of employee-related data management and access across different aspects of human resource operations.
+    In the HRIS Core Modules Use Case Diagram, alongside Performing Data Extraction and Managing/Viewing Performance Evaluation, the use cases are grouped into four primary functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. Each area extends to specific management or viewing capabilities. Employee Information Access covers personal data, profiles, health records, and professional licenses. Employment and Assignment Access encompasses employee assignments, their archives, and status information. Academic and Professional Development Access includes academic records, awards, and attended training sessions. Lastly, Certification and Reporting Access handles COE (Certificate of Employment) requests, reports, and contracts/appointments generation. This structure allows for efficient organization of various HRIS functions, providing comprehensive coverage of employee-related data management and access across different aspects of human resource operations.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-1.png}
-        \caption{HRIS Basic Modules Use Case Diagram - System Admin.}
+        \caption{HRIS Core Modules Use Case Diagram - System Admin.}
         \label{fig:use-case-basic-1}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-1} shows the use case diagram for the System Admin within the HRIS Basic Modules. The System Admin has full managing access to all use cases. This includes Performing Data Extraction, Managing Performance Evaluation and all the modules that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. This comprehensive access enables the System Admin to oversee and manage all aspects of the HRIS application, ensuring efficient and effective HR operations.
+    The figure \ref{fig:use-case-basic-1} shows the use case diagram for the System Admin within the HRIS Core Modules. The System Admin has full managing access to all use cases. This includes Performing Data Extraction, Managing Performance Evaluation and all the modules that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. This comprehensive access enables the System Admin to oversee and manage all aspects of the HRIS application, ensuring efficient and effective HR operations.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-2.png}
-        \caption{HRIS Basic Modules Use Case Diagram - Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer.}
+        \caption{HRIS Core Modules Use Case Diagram - Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer.}
         \label{fig:use-case-basic-2}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-2} depicts the use case diagram for Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer within the HRIS Basic Modules. These three actors share identical access which is limited to view-only across most use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and all the use cases that encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. 
+    The figure \ref{fig:use-case-basic-2} depicts the use case diagram for Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer within the HRIS Core Modules. These three actors share identical access which is limited to view-only across most use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and all the use cases that encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. 
 
     \begin{figure}[H] 
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-3.png}
-        \caption{HRIS Basic Modules Use Case Diagram - Director and Administrative Assistant.}
+        \caption{HRIS Core Modules Use Case Diagram - Director and Administrative Assistant.}
         \label{fig:use-case-basic-3}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-3} shows the use case diagram for the Director and Administrative Assistant within the HRIS Basic Modules. Both actors share access which is limited to view-only across all the use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and all the use cases that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. 
+    The figure \ref{fig:use-case-basic-3} shows the use case diagram for the Director and Administrative Assistant within the HRIS Core Modules. Both actors share access which is limited to view-only across all the use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and all the use cases that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. 
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-4.png}
-        \caption{HRIS Basic Modules Use Case Diagram - Records Management Specialist and ISS Officer.}
+        \caption{HRIS Core Modules Use Case Diagram - Records Management Specialist and ISS Officer.}
         \label{fig:use-case-basic-4}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-4} illustrates the use case diagram for the Records Management Specialist and ISS Officer.Both actors share the same access to the HRIS Basic Modules which is managing access to all use cases except one. This includes Performing Data Extraction, Managing Performance Evaluation, and all the use cases that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. The only exception is that, both actors can only view the employee status found in the Employment and Assignment Access functional area.
+    The figure \ref{fig:use-case-basic-4} illustrates the use case diagram for the Records Management Specialist and ISS Officer.Both actors share the same access to the HRIS Core Modules which is managing access to all use cases except one. This includes Performing Data Extraction, Managing Performance Evaluation, and all the use cases that encompasses the 4 functional areas: Employee Information Access, Employment and Assignment Access, Academic and Professional Development Access, and Certification and Reporting Access. The only exception is that, both actors can only view the employee status found in the Employment and Assignment Access functional area.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-5.png}
-        \caption{HRIS Basic Modules Use Case Diagram - Training and Development Staff.}
+        \caption{HRIS Core Modules Use Case Diagram - Training and Development Staff.}
         \label{fig:use-case-basic-5}
     \end{figure}
     
-    The figure \ref{fig:use-case-basic-5} demonstrates the use case diagram for the Training and Development Staff within the HRIS Basic Modules. The actor has limited view access to the most of the use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and also the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that, the Training and Development Staff has the privilege to Manage the Trainings Attended of the employees found in the Academic and Professional Development Access functional area.
+    The figure \ref{fig:use-case-basic-5} demonstrates the use case diagram for the Training and Development Staff within the HRIS Core Modules. The actor has limited view access to the most of the use cases. This includes Performing Data Extraction, Viewing Performance Evaluation, and also the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that, the Training and Development Staff has the privilege to Manage the Trainings Attended of the employees found in the Academic and Professional Development Access functional area.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-6.png}
-        \caption{HRIS Basic Modules Use Case Diagram - Benefits and Wellness Specialist.}
+        \caption{HRIS Core Modules Use Case Diagram - Benefits and Wellness Specialist.}
         \label{fig:use-case-basic-6}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-6} shows the use case diagram for Benefits and Wellness Specialist. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and also the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that, the Benefits and Wellness Specialist was able to Manage the Health Records of the employees which is found in the Employee Information Access functional area.
+    The figure \ref{fig:use-case-basic-6} shows the use case diagram for Benefits and Wellness Specialist. The actor has limited view access to the most of the use cases within the HRIS Core Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and also the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that, the Benefits and Wellness Specialist was able to Manage the Health Records of the employees which is found in the Employee Information Access functional area.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-7.png}
-        \caption{HRIS Basic Modules Use Case Diagram - Capability Building Officer.}
+        \caption{HRIS Core Modules Use Case Diagram - Capability Building Officer.}
         \label{fig:use-case-basic-7}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-7} illustrates the use case diagram for the Capability Building Officer. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. Moreover, the Capability Building Officer has the privilege to Manage the Performance Evaluation of the employees.
+    The figure \ref{fig:use-case-basic-7} illustrates the use case diagram for the Capability Building Officer. The actor has limited view access to the most of the use cases within the HRIS Core Modules. This includes Performing Data Extraction, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. Moreover, the Capability Building Officer has the privilege to Manage the Performance Evaluation of the employees.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{figures/images/diagrams/usecase/use-case-basic-8.png}
-        \caption{HRIS Basic Modules Use Case Diagram - Recruitment Officer.}
+        \caption{HRIS Core Modules Use Case Diagram - Recruitment Officer.}
         \label{fig:use-case-basic-8}
     \end{figure}
 
-    The figure \ref{fig:use-case-basic-8} illustrates the use case diagram for Recruitment Officers. The actor has limited view access to the most of the use cases within the HRIS Basic Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that,  in the Employee Information Access functional area, the Recruitment Officer has a distinct privilege which is to view, create, and update the personal information of the employees.
+    The figure \ref{fig:use-case-basic-8} illustrates the use case diagram for Recruitment Officers. The actor has limited view access to the most of the use cases within the HRIS Core Modules. This includes Performing Data Extraction, Viewing Performance Evaluation, and the use cases that  encompasses the 3 functional areas: Employee Information Access, Employment and Assignment Access, and Academic and Professional Development Access. The only exception is that,  in the Employee Information Access functional area, the Recruitment Officer has a distinct privilege which is to view, create, and update the personal information of the employees.
 
 
     This section presents the use case diagram for the HRIS TIMESYS Module. The module involves four primary actors: System Admin, Attendance Monitoring Staff, College Faculty Attendance Checker, and Compensation and Benefits Officer. Each actor has specific access to various use cases within the TIMESYS module, enabling them to perform functions related to employee attendance monitoring and management.
@@ -265,7 +265,7 @@ With this organizational structure in place, the new system will be designed to 
         \label{fig:erd-core-rank}
     \end{figure}
 
-    The Rank module in this HRIS is designed to manage the hierarchical structure of employee positions within the organization. The central \texttt{hr.rank\_record} entity is directly linked to \texttt{uiis.employee}, associating each employee with their current rank. This entity also connects to the \texttt{hr.rank} entity, which provides details about specific ranks. The \texttt{rank} entity is further linked to \texttt{hr.rank\_level}, allowing for a tiered structure of ranks. \texttt{hr.rank\_level}, then, is associated with \texttt{hr.rank\_type}, which categorizes different types of ranks. The \texttt{hr.rank\_type} entity is connected to both \texttt{hr.rank\_category} and \texttt{hr.active\_status}, enabling the system to classify ranks into broader categories and track their current status. 
+    The Rank module is designed to manage the hierarchical structure of employee positions within the organization. The central \texttt{hr.rank\_record} entity is directly linked to \texttt{uiis.employee}, associating each employee with their current rank. This entity also connects to the \texttt{hr.rank} entity, which provides details about specific ranks. The \texttt{rank} entity is further linked to \texttt{hr.rank\_level}, allowing for a tiered structure of ranks. \texttt{hr.rank\_level}, then, is associated with \texttt{hr.rank\_type}, which categorizes different types of ranks. The \texttt{hr.rank\_type} entity is connected to both \texttt{hr.rank\_category} and \texttt{hr.active\_status}, enabling the system to classify ranks into broader categories and track their current status. 
             
     This hierarchical structure allows for detailed management of employee rankings, supports career progression tracking, and can facilitate reporting on organizational structure and employee distribution across different rank levels and categories.
     
@@ -349,7 +349,7 @@ With this organizational structure in place, the new system will be designed to 
         \label{fig:gantt-chart-2}
     \end{figure}
 
-    In the figure \ref{fig:gantt-chart-2}, the gantt chart outlines the timeline for the modules development phase of the project. It breaks down the development process into specific tasks and assigns responsibilities to the development team. The timeline includes tasks from the user authentication to HR core modules, to TIMESYS, LEAVESYS, and FACSYS. During the development phase of the project, the developers shall also make iterations and adjustments based on user feedback and testing results.
+    In the figure \ref{fig:gantt-chart-2}, the gantt chart outlines the timeline for the modules development phase of the project. It breaks down the development process into specific tasks and assigns responsibilities to the development team. The timeline includes tasks from the user authentication to HRIS Core modules, to TIMESYS, LEAVESYS, and FACSYS. During the development phase of the project, the developers shall also make iterations and adjustments based on user feedback and testing results.
 
     \begin{figure}[H]
         \centering
@@ -358,7 +358,7 @@ With this organizational structure in place, the new system will be designed to 
         \label{fig:gantt-chart-3}
     \end{figure}
 
-    In the figure \ref{fig:gantt-chart-3}, the gantt chart outlines the timeline for the migration phase of the project. Wherein, it will require other entities such as the HR, ISS, DBA, and MIS to work together to ensure a smooth transition of data from the existing HRIS system to the new HRIS application. The timeline includes migration plan, testing phase, and deployment phase.
+    In the figure \ref{fig:gantt-chart-3}, the gantt chart outlines the timeline for the migration phase of the project. Wherein, it will require other stakeholders such as the HR, ISS, DBA, and MIS to work together to ensure a smooth transition of data from the existing HRIS system to the new HRIS application. The timeline includes migration plan, testing phase, and deployment phase.
 
     \begin{figure}[H]
         \centering
@@ -392,7 +392,7 @@ With this organizational structure in place, the new system will be designed to 
             This phase involves identifying the key stakeholders, analyzing the current HRIS that being utilized, gathering requirement for the new system. Having a proper assessment and planning are crucial in understanding the scope of the migration, identifying potential risks, and setting clear objectives. This phase ensures that all stakeholders are aligned and that the migration plan addresses all necessary aspects of the project. Also, effective planning will help mitigate risks and lays a solid foundation for the migration process.
 
         \subsubsection{Data Mapping and Cleansing}
-            In this phase, it includes aligning the data fields from the legacy system to the new HRIS and correcting data quality issues. To ensure that all important data is correctly transferred to the new system, having an proper or accurate data mapping is needed. This phase also includes data cleansing as it is essential for maintaining data integrity and ensuring that the new system operates with accurate and reliable data. This step is critical for preventing data-related issues post-migration and ensuring a smooth transition.
+            In this phase, it includes aligning the data fields from the legacy system to the new HRIS and correcting data quality issues. To ensure that all important data is correctly transferred to the new system, having an proper or accurate data mapping is needed. Within the data mapping phase, includes the help of data encoders to manually encode conflicting datas e.g., attributes with different data types to match with UIIS requirements for procedures. This phase  includes data cleansing as it is essential for maintaining data integrity and ensuring that the new system operates with accurate and reliable data. This step is critical for preventing data-related issues post-migration and ensuring a smooth transition.
 
         \subsubsection{Migration Design}
             The Migration design involves selecting migration tools  and deciding on the migration approach. Choosing the necessary and right tools and approach can significantly reduce the risk of errors and downtime. With a well-designed migration process ensures that data is transferred efficiently and securely. This step is important for optimizing the migration process and ensuring that it aligns with the project's goals and constraints
@@ -437,7 +437,7 @@ This section contains some of the high-level tasks and considerations that will 
 
     \subsection{Deployment Planning}
         
-        The deployment plan identifies the requirements and responsibilities of both the client and the development team in preparation for deployment. This includes accomplishing HR requirements -- HR core modules, TIMESYS, LEAVESYS, and FACSYS after reaching satisfaction within the testing plan.
+        The deployment plan identifies the requirements and responsibilities of both the client and the development team in preparation for deployment. This includes accomplishing HR requirements -- HRIS Core modules, TIMESYS, LEAVESYS, and FACSYS after reaching satisfaction within the testing plan.
 
     \subsection{Resources}
         \subsubsection{Facilities}
@@ -451,7 +451,7 @@ This section contains some of the high-level tasks and considerations that will 
         \begin{enumerate}
             \item Desktop Computers/Laptops
             \begin{enumerate}
-                \item \textbf{Processor:} Minimum Intel Core i3 or AMD equivalent
+                \item \textbf{Processor:} Minimum of Intel Core i3 or AMD equivalent
                 \item \textbf{RAM:} Minimum of 4GB (recommended 8GB or higher)
                 \item \textbf{Storage:} Minimum of 128GB (recommended 256GB or higher)
             \end{enumerate}
@@ -483,7 +483,6 @@ This section contains some of the high-level tasks and considerations that will 
         \begin{itemize}
             \item[] \textbf{User Manuals:} Detailed guides for end-users to navigate and utilize the HRIS effectively.
             \item[] \textbf{Technical Documentation:} In-depth documentation for developers detailing the system architecture, database schema, and configuration settings.
-            \item[] \textbf{Training Materials:} Resources for training sessions, including slides, and user manuals.
             \item[] \textbf{FAQs and Troubleshooting Guides:} Common issues and their resolutions to assist users and support staff under user manual.
             \item[] \textbf{System Requirements:} Specifications for hardware, software, and network configurations needed to run the new HRIS.
         \end{itemize}
@@ -540,7 +539,7 @@ This section contains some of the few initial screen mock-ups for redesigning am
         \label{fig:app-manager}
     \end{figure}
 
-    Within this page, is the default home page for all HR managers. This page displays the summary of the HRIS system and the current status of the HRIS system. This includes a visualized Key Performance Indicators (KPIs) of the system's data and the current status of the system along with clickable links for different modules.
+    Within this page, is the default home page for all HRIS users. This page displays the summary of the HRIS system and the current status of the HRIS system. This includes a visualized Key Performance Indicators (KPIs) of the system's data and the current status of the system along with clickable links for different modules.
 
     \begin{figure}[H]
         \centering

@@ -1,5 +1,6 @@
 {
     "editor.wordWrap": "on",
+    "editor.fontFamily": "Inter, 'Courier New', monospace",
     // hide the latex compile files in the explorer
     "files.exclude": {
         "**/*.aux": true,
